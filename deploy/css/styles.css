@@ -352,3 +352,20 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Section 1
+============= */
+#section-1 img {
+  width: 100%; }
+
+/* =============
+    Section 2
+============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: auto 1200 auto;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 #section-2-content {
+    grid-area: section-2;
+    margin: 0px 20px 0px 20px;
+    text-align: center; }
