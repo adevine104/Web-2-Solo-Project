@@ -1,19 +1,33 @@
 /* =============
     Section 2
 ============= */
-
-#section-2{
-
+#section-2 {
     display: grid;
-    grid-template-columns: auto 1200 auto;
     grid-template-areas: ". section-2 .";
+    grid-template-columns: 15px auto 15px;
 
-    #section-2-content{
+    #section-2-content {
+        font-size: 1.572rem;
         grid-area: section-2;
-        margin: 0px 20px 0px 20px;
-        text-align: center;
+        line-height: 2rem;
+        margin: 0px 40px 0px 40px;
+        text-align: justify;
 
+        #section-2-header {
+            color: $gold;
+            text-align: center;
+        }
 
+        #section-2-buttons {
+            color: $lilac;
+            text-align: center;
+
+            #join-button {
+                background-color: $lilac;
+                color: white;
+                margin-bottom: 50px;
+                padding: 1px 5px 1px 5px;
+            }
+        }
     }
-
 }

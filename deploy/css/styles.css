@@ -328,6 +328,9 @@ ul {
 /* =============
     Buttons
 ============= */
+:link {
+  text-decoration: none; }
+
 /* =============
     Forms
 ============= */
@@ -363,9 +366,73 @@ textarea {
 ============= */
 #section-2 {
   display: grid;
-  grid-template-columns: auto 1200 auto;
-  grid-template-areas: ". section-2 ."; }
+  grid-template-areas: ". section-2 .";
+  grid-template-columns: 15px auto 15px; }
   #section-2 #section-2-content {
+    font-size: 1.572rem;
     grid-area: section-2;
-    margin: 0px 20px 0px 20px;
-    text-align: center; }
+    line-height: 2rem;
+    margin: 0px 40px 0px 40px;
+    text-align: justify; }
+    #section-2 #section-2-content #section-2-header {
+      color: #DCAC03;
+      text-align: center; }
+    #section-2 #section-2-content #section-2-buttons {
+      color: #8282EE;
+      text-align: center; }
+      #section-2 #section-2-content #section-2-buttons #join-button {
+        background-color: #8282EE;
+        color: white;
+        margin-bottom: 50px;
+        padding: 1px 5px 1px 5px; }
+
+/* =============
+    Section 3
+============= */
+#section-3 {
+  background-color: #FF8457; }
+  #section-3 #section-3-desktop aside img {
+    width: 100%; }
+  #section-3 #section-3-desktop #section-3-container {
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: 0px auto 0px; }
+    #section-3 #section-3-desktop #section-3-container #section-3-header {
+      background-color: #FF703B;
+      color: white;
+      grid-area: section-3;
+      margin: 0px 20px 0px 20px;
+      text-align: center; }
+    #section-3 #section-3-desktop #section-3-container #section-3-text {
+      background-color: #FF8457;
+      color: white;
+      grid-area: section-3;
+      margin: 40px 20px 0px 20px;
+      text-align: left; }
+
+/* =============
+    Section 4
+============= */
+#section-4 img {
+  width: 100%; }
+
+/* =============
+    Section 5
+============= */
+#section-5 img {
+  width: 100%; }
+
+/* =============
+    Section 6
+============= */
+/* =============
+    Section 7
+============= */
+#section-7 img {
+  width: 100%; }
+
+/* =============
+    Section 8
+============= */
+#section-8 img {
+  width: 100%; }

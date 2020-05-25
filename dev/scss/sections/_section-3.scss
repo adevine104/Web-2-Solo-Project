@@ -1,0 +1,36 @@
+/* =============
+    Section 3
+============= */
+#section-3 {
+    background-color: $lightorange;
+
+    #section-3-desktop {
+        aside {
+            img {
+                width: 100%;
+            }
+        }
+
+        #section-3-container {
+            display: grid;
+            grid-template-areas: ". section-3 .";
+            grid-template-columns: 0px auto 0px;
+
+            #section-3-header {
+                background-color: $boldorange;
+                color: white;
+                grid-area: section-3;
+                margin: 0px 20px 0px 20px;
+                text-align: center;
+            }
+
+            #section-3-text {
+                background-color: $lightorange;
+                color: white;
+                grid-area: section-3;
+                margin: 40px 20px 0px 20px;
+                text-align: left;
+            }
+        }
+    }
+}
