@@ -7,26 +7,64 @@
     grid-template-columns: 15px auto 15px;
 
     #section-2-content {
-        font-size: 1.572rem;
+        font-family: Taviraj light;
+        font-size: 1.5rem;
         grid-area: section-2;
         line-height: 2rem;
-        margin: 0px 40px 0px 40px;
+        margin: 0px 30px 0px 30px;
         text-align: justify;
 
         #section-2-header {
-            color: $gold;
+            font-family: Patua One;
+            font-weight: 100;
             text-align: center;
+            color: $gold;
+            font-size: 1.25rem;
+            padding: 40px 0px 40px 0px;
         }
 
         #section-2-buttons {
-            color: $lilac;
             text-align: center;
+            margin: 20px 0px 20px 0px;
+            font-family: Taviraj light;
+            font-size: 1rem;
+
+            a:link,
+            a:visited {
+                background-color: $white;
+                color: $lilac;
+                padding: 10px 25px;
+                text-decoration: none;
+                transition: 0.25s;
+                width: 100%;
+            }
+
+            a:hover,
+            a:active {
+                background-color: $white;
+                color: $gold;
+            }
 
             #join-button {
-                background-color: $lilac;
-                color: white;
-                margin-bottom: 50px;
-                padding: 1px 5px 1px 5px;
+                margin: 20px 0px 40px 0px;
+                padding: 5px 10px 5px 10px;
+                font-family: Patua One;
+
+                a:link,
+                a:visited {
+                    background-color: $lilac;
+                    color: $white;
+                    padding: 10px 25px;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    width: 100%;
+                }
+
+                a:hover,
+                a:active {
+                    background-color: $lilac;
+                    color: $gold;
+                }
             }
         }
     }
