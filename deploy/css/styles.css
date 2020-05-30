@@ -461,13 +461,13 @@ header {
       font-weight: 100;
       text-align: center;
       color: #DCAC03;
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       padding: 40px 0px 40px 0px; }
     #section-2 #section-2-content #section-2-buttons {
       text-align: center;
-      margin: 20px 0px 20px 0px;
+      margin: 20px 0px 40px 0px;
       font-family: Taviraj light;
-      font-size: 1rem; }
+      font-size: 1.4rem; }
       #section-2 #section-2-content #section-2-buttons a:link,
       #section-2 #section-2-content #section-2-buttons a:visited {
         background-color: #fff;
@@ -481,14 +481,15 @@ header {
         background-color: #fff;
         color: #DCAC03; }
       #section-2 #section-2-content #section-2-buttons #join-button {
-        margin: 20px 0px 40px 0px;
+        margin: 50px 0px 60px 0px;
         padding: 5px 10px 5px 10px;
-        font-family: Patua One; }
+        font-family: Patua One;
+        font-size: 1.8rem; }
         #section-2 #section-2-content #section-2-buttons #join-button a:link,
         #section-2 #section-2-content #section-2-buttons #join-button a:visited {
           background-color: #8282EE;
           color: #fff;
-          padding: 10px 25px;
+          padding: 20px 45px;
           text-decoration: none;
           transition: 0.25s;
           width: 100%; }
@@ -501,49 +502,309 @@ header {
     Section 3
 ============= */
 #section-3 {
-  background-color: #FF8457; }
-  #section-3 #section-3-desktop aside img {
-    width: 100%; }
-  #section-3 #section-3-desktop #section-3-container {
-    display: grid;
-    grid-template-areas: ". section-3 .";
-    grid-template-columns: 0px auto 0px; }
-    #section-3 #section-3-desktop #section-3-container #section-3-header {
+  background-color: #FF8457;
+  display: grid;
+  grid-template-areas: ". section-3 .";
+  grid-template-columns: 0px auto 0px; }
+  #section-3 #section-3-desktop {
+    grid-area: section-3; }
+    #section-3 #section-3-desktop aside {
+      background-image: url("../img/section-3/blueface.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -300px 0px;
+      height: 45vh; }
+    #section-3 #section-3-desktop #section-3-header {
+      font-family: Patua One;
+      font-size: 1.4rem;
       background-color: #FF703B;
       color: white;
       grid-area: section-3;
-      margin: 0px 20px 0px 20px;
+      margin: 0px 0px 0px 0px;
+      padding: 20px 35px 20px 35px;
       text-align: center; }
-    #section-3 #section-3-desktop #section-3-container #section-3-text {
+    #section-3 #section-3-desktop ol {
+      list-style: none;
+      counter-reset: item; }
+    #section-3 #section-3-desktop li {
+      counter-increment: item;
+      margin-bottom: 30px; }
+    #section-3 #section-3-desktop li:before {
+      padding-top: 8px;
+      margin-right: 0px;
+      content: counter(item);
+      background: #fff;
+      color: #FF8457;
+      width: 1.8em;
+      height: 1.5em;
+      text-align: center;
+      display: inline-block; }
+    #section-3 #section-3-desktop #section-3-text {
+      font-family: Patua One;
       background-color: #FF8457;
       color: white;
       grid-area: section-3;
-      margin: 40px 20px 0px 20px;
-      text-align: left; }
+      margin: 30px 20px 0px 0px;
+      text-align: left;
+      font-size: 1.9rem; }
+      #section-3 #section-3-desktop #section-3-text a:link,
+      #section-3 #section-3-desktop #section-3-text a:visited {
+        color: #fff;
+        padding: 10px 25px 10px 15px;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 100%; }
+      #section-3 #section-3-desktop #section-3-text a:hover,
+      #section-3 #section-3-desktop #section-3-text a:active {
+        color: #8282EE; }
 
 /* =============
     Section 4
 ============= */
-#section-4 img {
-  width: 100%; }
+#section-4 {
+  display: grid;
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 0px auto 0px; }
+  #section-4 #section-4-content {
+    grid-area: section-4; }
+    #section-4 #section-4-content #section-4-header {
+      font-family: Patua One;
+      color: #5340BD;
+      grid-area: section-4;
+      margin: 50px 20px 20px 20px;
+      text-align: left;
+      font-size: 1.6rem; }
+    #section-4 #section-4-content aside {
+      background-image: url("../img/section-4/infovid.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 28vh; }
+    #section-4 #section-4-content p {
+      font-family: Taviraj;
+      font-weight: 100;
+      font-size: 1.5rem;
+      grid-area: section-4;
+      line-height: 2rem;
+      margin: 20px 30px 40px 30px;
+      text-align: justify; }
 
 /* =============
     Section 5
 ============= */
-#section-5 img {
-  width: 100%; }
+#section-5 {
+  display: grid;
+  grid-template-areas: ". section-5 .";
+  grid-template-columns: 0px auto 0px; }
+  #section-5 #section-5-content {
+    grid-area: section-5;
+    background-color: #6FC1BB; }
+    #section-5 #section-5-content #section-5-header {
+      font-family: Patua One;
+      background-color: #029287;
+      color: #fff;
+      grid-area: section-5;
+      margin: 0px 0px 20px 0px;
+      padding: 40px 0px 40px 0px;
+      text-align: center;
+      font-size: 1.6rem; }
+    #section-5 #section-5-content #section-5-countdown {
+      font-family: Taviraj;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px; }
+      #section-5 #section-5-content #section-5-countdown h4 {
+        display: inline-block;
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px 10px 0px 10px; }
+      #section-5 #section-5-content #section-5-countdown #c-5-numbers {
+        width: 100%; }
+        #section-5 #section-5-content #section-5-countdown #c-5-numbers li {
+          list-style: none;
+          display: inline-block;
+          width: calc(100% / 4);
+          text-align: center;
+          background-color: white;
+          color: #6FC1BB;
+          border-radius: 100%;
+          height: 58px;
+          padding-top: 33px;
+          margin: 0px 10px 0px 10px;
+          font-size: 1.6rem; }
+      #section-5 #section-5-content #section-5-countdown #c-5-words {
+        width: 100%; }
+        #section-5 #section-5-content #section-5-countdown #c-5-words li {
+          list-style: none;
+          display: inline-block;
+          width: calc(100% / 4);
+          text-align: center;
+          margin: 0px 10px 0px 10px;
+          font-size: 1.4rem; }
+    #section-5 #section-5-content aside {
+      background-image: url("../img/section-5/livestreamvid.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 28vh; }
+    #section-5 #section-5-content h6 {
+      font-family: Taviraj;
+      font-weight: 700;
+      color: white;
+      text-align: right;
+      font-size: 1.2rem;
+      margin: 10px 10px 20px 20px; }
 
 /* =============
     Section 6
 ============= */
+#section-6 {
+  display: grid;
+  grid-template-areas: '. section-6 .';
+  grid-template-columns: 15px auto 15px; }
+  @media (min-width: 1200px) {
+    #section-6 {
+      grid-template-columns: auto 1200px auto; } }
+  #section-6 #section-6-container {
+    grid-area: section-6; }
+    #section-6 #section-6-container h1 {
+      font-family: Patua One;
+      font-weight: 100;
+      text-align: center;
+      color: #DCAC03;
+      font-size: 3rem;
+      padding: 10px 0px 10px 0px;
+      margin: 20px 0px 30px 0px; }
+    #section-6 #section-6-container ul {
+      display: grid;
+      gap: 30px;
+      grid-template-areas: "g1 g2" "g3 g4";
+      grid-template-rows: repeat(2, 1fr); }
+      @media (min-width: 768px) {
+        #section-6 #section-6-container ul {
+          grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+          grid-template-columns: repeat(3, 1fr); } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-container ul {
+          grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
+          grid-template-columns: repeat(4, 1fr); } }
+      #section-6 #section-6-container ul li {
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+        height: 150px; }
+      #section-6 #section-6-container ul #g1 {
+        background-image: url("../img/section-6/pirates.jpg");
+        grid-area: g1; }
+      #section-6 #section-6-container ul #g2 {
+        background-image: url("../img/section-6/flowerman2.jpg");
+        grid-area: g2; }
+      #section-6 #section-6-container ul #g3 {
+        background-image: url("../img/section-6/bigface.jpg");
+        grid-area: g3; }
+      #section-6 #section-6-container ul #g4 {
+        background-image: url("../img/section-6/orangeman2.jpg");
+        grid-area: g4; }
+      #section-6 #section-6-container ul #g5 {
+        background-image: url("../img/section-6/saxguy.jpg"); }
+        @media (min-width: 768px) {
+          #section-6 #section-6-container ul #g5 {
+            grid-area: g5; } }
+      #section-6 #section-6-container ul #g6 {
+        background-image: url("../img/section-6/singguy.jpg"); }
+        @media (min-width: 768px) {
+          #section-6 #section-6-container ul #g6 {
+            grid-area: g6; } }
+      #section-6 #section-6-container ul #g7 {
+        background-image: url("../img/section-6/whitehat.jpg"); }
+        @media (min-width: 992px) {
+          #section-6 #section-6-container ul #g7 {
+            grid-area: g7; } }
+      #section-6 #section-6-container ul #g8 {
+        background-image: url("../img/section-6/pinkbirdman.jpg"); }
+        @media (min-width: 992px) {
+          #section-6 #section-6-container ul #g8 {
+            grid-area: g8; } }
 /* =============
     Section 7
 ============= */
-#section-7 img {
-  width: 100%; }
+#section-7 {
+  display: grid;
+  grid-template-areas: ". section-7 .";
+  grid-template-columns: 0px auto 0px; }
+  #section-7 #section-7-content {
+    grid-area: section-7;
+    background-color: #94C22E; }
+    #section-7 #section-7-content h1 {
+      font-family: Patua One;
+      background-color: #8BB62B;
+      color: #fff;
+      grid-area: section-7;
+      margin: 0px 0px 30px 0px;
+      padding: 30px 20px 30px 20px;
+      text-align: center;
+      font-size: 2.8rem; }
+    #section-7 #section-7-content aside {
+      background-image: url("../img/section-7/highlightvid.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 28vh; }
+    #section-7 #section-7-content p {
+      font-family: Taviraj;
+      font-weight: 100;
+      font-size: 1.5rem;
+      grid-area: section-7;
+      line-height: 2rem;
+      margin: 30px 30px 50px 30px;
+      text-align: justify; }
 
 /* =============
     Section 8
 ============= */
-#section-8 img {
-  width: 100%; }
+#section-8 {
+  display: grid;
+  grid-template-areas: ". section-8 .";
+  grid-template-columns: 0px auto 0px; }
+  #section-8 #section-8-content {
+    grid-area: section-4; }
+    #section-8 #section-8-content h1 {
+      font-family: Patua One;
+      color: #DCAC03;
+      grid-area: section-8;
+      margin: 40px 20px 20px 20px;
+      text-align: center;
+      font-size: 2.8rem; }
+    #section-8 #section-8-content aside {
+      background-image: url("../img/section-8/parade2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 28vh; }
+    #section-8 #section-8-content p {
+      font-family: Taviraj;
+      font-weight: 100;
+      font-size: 1.5rem;
+      grid-area: section-8;
+      line-height: 2rem;
+      margin: 20px 30px 30px 30px;
+      text-align: justify; }
+    #section-8 #section-8-content #section-8-button {
+      text-align: center;
+      margin: 10px 0px 40px 0px;
+      font-family: Taviraj light;
+      font-size: 1.4rem; }
+      #section-8 #section-8-content #section-8-button a:link,
+      #section-8 #section-8-content #section-8-button a:visited {
+        background-color: #fff;
+        color: #8282EE;
+        padding: 10px 25px;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 100%; }
+      #section-8 #section-8-content #section-8-button a:hover,
+      #section-8 #section-8-content #section-8-button a:active {
+        background-color: #fff;
+        color: #DCAC03; }

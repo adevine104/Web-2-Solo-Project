@@ -1,3 +1,112 @@
 /* =============
     Section 6
 ============= */
+#section-6 {
+    display: grid;
+    grid-template-areas: '. section-6 .';
+    grid-template-columns: 15px auto 15px;
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #section-6-container{
+        grid-area: section-6;
+
+        h1{
+            font-family: Patua One;
+            font-weight: 100;
+            text-align: center;
+            color: $gold;
+            font-size: 3rem;
+            padding: 10px 0px 10px 0px;
+            margin: 20px 0px 30px 0px; 
+        }
+        
+        ul {
+            display: grid;
+            gap: 30px;
+            grid-template-areas: 
+            "g1 g2"
+            "g3 g4";
+            grid-template-rows: repeat(2, 1fr);
+
+            @include md {
+                // grid-template-columns: 50% auto;
+                grid-template-areas: 
+                "g1 g2 g3"
+                "g4 g5 g6";
+                grid-template-columns: repeat(3, 1fr);
+                // grid-template-rows: repeat(3, 277px);
+            }
+
+            @include lg {
+                grid-template-areas: 
+                "g1 g2 g3 g4"
+                "g5 g6 g7 g8";
+                grid-template-columns: repeat(4, 1fr);
+                // grid-template-rows: repeat(3, 250px);
+            }
+
+            li {
+                background-position: center;
+                background-size: cover;
+                border-radius: 100%;
+                height: 150px;
+            }
+
+            #g1 {
+                background-image: url("../img/section-6/pirates.jpg");
+                grid-area: g1;
+            }
+
+            #g2 {
+                background-image: url("../img/section-6/flowerman2.jpg");
+                grid-area: g2;
+            }
+
+            #g3 {
+                background-image: url("../img/section-6/bigface.jpg");
+                grid-area: g3;
+            }
+
+            #g4 {
+                background-image: url("../img/section-6/orangeman2.jpg");
+                grid-area: g4;
+            }
+
+            #g5 {
+                background-image: url("../img/section-6/saxguy.jpg");
+
+                @include md {
+                    grid-area: g5;
+                }
+            }
+
+            #g6 {
+                background-image: url("../img/section-6/singguy.jpg");
+
+                @include md {
+                    grid-area: g6;
+                }
+            }
+
+            #g7 {
+                background-image: url("../img/section-6/whitehat.jpg");
+                
+                @include lg {
+                    grid-area: g7;
+                }
+            }
+
+            #g8 {
+                background-image: url("../img/section-6/pinkbirdman.jpg");
+                
+                @include lg {
+                    grid-area: g8;
+                }
+            }
+        }
+    }
+}
+// }

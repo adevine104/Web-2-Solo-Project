@@ -3,9 +3,43 @@
 ============= */
 
 #section-7{
-    
-    img{
-        width: 100%;
-    }
+    display: grid;
+    grid-template-areas: ". section-7 .";
+    grid-template-columns: 0px auto 0px;
 
+    #section-7-content{
+        grid-area: section-7;
+        background-color: $lightgreen;
+
+        h1{
+            font-family: Patua One;
+            background-color: $darkgreen;
+            color: $white;
+            grid-area: section-7;
+            margin: 0px 0px 30px 0px;
+            padding: 30px 20px 30px 20px;
+            text-align: center;
+            font-size: 2.8rem;
+            }
+        
+        aside{
+            background-image: url('../img/section-7/highlightvid.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 28vh;
+            }
+
+        p{
+            font-family: Taviraj;
+            font-weight: 100;
+            font-size: 1.5rem;
+            grid-area: section-7;
+            line-height: 2rem;
+            margin: 30px 30px 50px 30px;
+            text-align: justify;
+            }
+        
+    }
 }
+           

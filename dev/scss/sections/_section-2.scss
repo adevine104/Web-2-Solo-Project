@@ -19,15 +19,15 @@
             font-weight: 100;
             text-align: center;
             color: $gold;
-            font-size: 1.25rem;
+            font-size: 1.4rem;
             padding: 40px 0px 40px 0px;
         }
 
         #section-2-buttons {
             text-align: center;
-            margin: 20px 0px 20px 0px;
+            margin: 20px 0px 40px 0px;
             font-family: Taviraj light;
-            font-size: 1rem;
+            font-size: 1.4rem;
 
             a:link,
             a:visited {
@@ -46,15 +46,16 @@
             }
 
             #join-button {
-                margin: 20px 0px 40px 0px;
+                margin: 50px 0px 60px 0px;
                 padding: 5px 10px 5px 10px;
                 font-family: Patua One;
+                font-size: 1.8rem;
 
                 a:link,
                 a:visited {
                     background-color: $lilac;
                     color: $white;
-                    padding: 10px 25px;
+                    padding: 20px 45px;
                     text-decoration: none;
                     transition: 0.25s;
                     width: 100%;

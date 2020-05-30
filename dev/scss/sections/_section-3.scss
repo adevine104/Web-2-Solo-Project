@@ -3,34 +3,74 @@
 ============= */
 #section-3 {
     background-color: $lightorange;
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: 0px auto 0px;
 
     #section-3-desktop {
-        aside {
-            img {
-                width: 100%;
-            }
-        }
+         grid-area: section-3;
 
-        #section-3-container {
-            display: grid;
-            grid-template-areas: ". section-3 .";
-            grid-template-columns: 0px auto 0px;
+         aside{
+            background-image: url('../img/section-3/blueface.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: -300px 0px;
+            height: 45vh;
+         }
 
             #section-3-header {
+                font-family: Patua One;
+                font-size: 1.4rem;
                 background-color: $boldorange;
                 color: white;
                 grid-area: section-3;
-                margin: 0px 20px 0px 20px;
+                margin: 0px 0px 0px 0px;
+                padding: 20px 35px 20px 35px;
                 text-align: center;
             }
 
+            ol {
+                list-style: none;
+                counter-reset: item;
+              }
+              li {
+                counter-increment: item;
+                margin-bottom: 30px;
+              }
+              li:before {
+                padding-top: 8px;
+                margin-right: 0px;
+                content: counter(item);
+                background: $white;
+                color: $lightorange;
+                width: 1.8em;
+                height: 1.5em;
+                text-align: center;
+                display: inline-block;
+              }
+
             #section-3-text {
+                font-family: Patua One;
                 background-color: $lightorange;
                 color: white;
                 grid-area: section-3;
-                margin: 40px 20px 0px 20px;
+                margin: 30px 20px 0px 0px;
                 text-align: left;
+                font-size: 1.9rem;
+
+                a:link,
+                a:visited {
+                    color: $white;
+                    padding: 10px 25px 10px 15px;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    width: 100%;
+                }
+
+                a:hover,
+                a:active {
+                    color: $lilac;
+                }
             }
         }
     }
-}

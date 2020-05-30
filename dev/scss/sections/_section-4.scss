@@ -2,10 +2,40 @@
     Section 4
 ============= */
 
-#section-4{
-    
-    img{
-        width: 100%;
-    }
+#section-4 {
+    display: grid;
+    grid-template-areas: ". section-4 .";
+    grid-template-columns: 0px auto 0px;
 
+    #section-4-content{
+        grid-area: section-4;
+
+        #section-4-header {
+            font-family: Patua One;
+            color: $purple;
+            grid-area: section-4;
+            margin: 50px 20px 20px 20px;
+            text-align: left;
+            font-size: 1.6rem;
+            }
+        
+         aside{
+            background-image: url('../img/section-4/infovid.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 28vh;
+            }
+            
+            p{
+                font-family: Taviraj;
+                font-weight: 100;
+                font-size: 1.5rem;
+                grid-area: section-4;
+                line-height: 2rem;
+                margin: 20px 30px 40px 30px;
+                text-align: justify;  
+            }
 }
+}
+           

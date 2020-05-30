@@ -3,9 +3,64 @@
 ============= */
 
 #section-8{
-    
-    img{
-        width: 100%;
-    }
+    display: grid;
+    grid-template-areas: ". section-8 .";
+    grid-template-columns: 0px auto 0px;
 
+    #section-8-content{
+        grid-area: section-4;
+
+        h1{
+            font-family: Patua One;
+            color: $gold;
+            grid-area: section-8;
+            margin: 40px 20px 20px 20px;
+            text-align: center;
+            font-size: 2.8rem;
+            }
+        
+         aside{
+            background-image: url('../img/section-8/parade2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 28vh;
+            }
+            
+            p{
+                font-family: Taviraj;
+                font-weight: 100;
+                font-size: 1.5rem;
+                grid-area: section-8;
+                line-height: 2rem;
+                margin: 20px 30px 30px 30px;
+                text-align: justify;  
+            }
+
+            #section-8-button{
+                text-align: center;
+                margin: 10px 0px 40px 0px;
+                font-family: Taviraj light;
+                font-size: 1.4rem;
+
+                a:link,
+                a:visited {
+                    background-color: $white;
+                    color: $lilac;
+                    padding: 10px 25px;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    width: 100%;
+                }
+
+                a:hover,
+                a:active {
+                    background-color: $white;
+                    color: $gold;
+                }
+            
+        }
+    }
 }
+
+           
