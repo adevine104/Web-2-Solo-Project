@@ -16,6 +16,12 @@
             background-repeat: no-repeat;
             background-position: -300px 0px;
             height: 45vh;
+
+            @include md{
+                height: 30vh;
+                background-position: 0px 0px;
+            }
+
          }
 
             #section-3-header {
@@ -27,12 +33,34 @@
                 margin: 0px 0px 0px 0px;
                 padding: 20px 35px 20px 35px;
                 text-align: center;
+
+                @include md{
+                    padding: 30px 35px 30px 35px;
+                }
+
+                @include lg{
+                    
+                }
             }
 
             ol {
                 list-style: none;
                 counter-reset: item;
-              }
+            
+
+                @include md{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 20px 0px 20px 0px;
+                    // line-height: 2rem;
+                    // list-style-position:inside;
+                    // text-align:  center;
+                    }
+                    
+            }
+            }
+
               li {
                 counter-increment: item;
                 margin-bottom: 30px;
@@ -73,4 +101,5 @@
                 }
             }
         }
-    }
+
+    

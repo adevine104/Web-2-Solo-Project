@@ -377,12 +377,15 @@ header {
       header > div {
         grid-template-areas: "nav logo";
         grid-template-columns: auto 20%; } }
-    header > div #logo-container {
+    header > div #search-container {
       grid-area: logo;
       padding: 20px;
-      text-align: right; }
-      header > div #logo-container a:link,
-      header > div #logo-container a:visited {
+      margin-top: 12px;
+      text-align: right;
+      font-family: Taviraj;
+      font-weight: 500; }
+      header > div #search-container a:link,
+      header > div #search-container a:visited {
         background-color: #fff;
         border-radius: 23px;
         color: #5340BD;
@@ -391,9 +394,9 @@ header {
         padding: 10px 25px;
         text-decoration: none;
         transition: 0.25s; }
-      header > div #logo-container a:hover,
-      header > div #logo-container a:active {
-        background-color: #000;
+      header > div #search-container a:hover,
+      header > div #search-container a:active {
+        background-color: #DCAC03;
         color: #fff; }
     header > div #burger-container {
       align-items: center;
@@ -409,14 +412,56 @@ header {
       background-color: #fff;
       display: none;
       grid-area: nav;
-      padding: 0 20px; }
+      padding: 10px 20px;
+      font-family: Taviraj;
+      font-weight: 500; }
+      header > div #nav-container a:link,
+      header > div #nav-container a:visited {
+        background-color: #fff;
+        color: #5340BD;
+        padding: 20px 45px;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 100%; }
+      header > div #nav-container a:hover,
+      header > div #nav-container a:active {
+        background-color: #fff;
+        color: #DCAC03; }
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #fff;
           display: block !important; } }
+    @media (min-width: 992px) {
+      header > div ul {
+        display: grid;
+        grid-template-columns: 12% 10% 12% 12% 10% 12%;
+        font-size: 1.25rem; } }
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #8282EE;
+  color: white;
+  text-align: center;
+  padding: 50px 0; }
+  footer #footer-content {
+    grid-area: footer; }
+    footer #footer-content h1 {
+      font-size: 1.25rem; }
+      footer #footer-content h1 span {
+        color: #fff; }
+    footer #footer-content ul {
+      display: flex;
+      justify-content: center; }
+      footer #footer-content ul li {
+        margin: 0 20px; }
+        footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
+          font-size: 1.875rem;
+          color: #DCAC03;
+          transition: 0.25s; }
+        footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
+          color: #fff; }
+
 /* =============
     Section 1
 ============= */
@@ -426,6 +471,12 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 60vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 80vh; } }
   #section-1 > div {
     font-family: Patua One;
     text-align: center;
@@ -433,15 +484,28 @@ header {
     margin: 50px 0px 20px 0px;
     padding: 40px 0px 30px 0px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.702118) 23%, rgba(0, 0, 0, 0.371586) 85%, rgba(255, 255, 255, 0) 99%); }
+    @media (min-width: 768px) {
+      #section-1 > div {
+        padding: 40px 0px 80px 0px;
+        text-align: left; } }
     #section-1 > div h1 {
       font-size: 3.5rem;
       line-height: 3.25rem;
       font-weight: 100; }
+      @media (min-width: 768px) {
+        #section-1 > div h1 {
+          font-size: 4.8rem;
+          line-height: 4.5rem;
+          margin: 50px 0px 0px 50px; } }
     #section-1 > div h2 {
       font-size: 1.5rem;
       line-height: 3.5rem;
-      font-family: Taviraj light; }
-
+      font-family: Taviraj;
+      font-weight: 300; }
+      @media (min-width: 768px) {
+        #section-1 > div h2 {
+          font-size: 2rem;
+          margin: 0px 0px 20px 50px; } }
 /* =============
     Section 2
 ============= */
@@ -457,6 +521,14 @@ header {
     line-height: 2rem;
     margin: 0px 20px 0px 20px;
     text-align: justify; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-content {
+        text-align: center;
+        margin: 0px 50px 0px 50px; } }
+    @media (min-width: 992px) {
+      #section-2 #section-2-content {
+        text-align: center;
+        margin: auto 10% auto 10%; } }
     #section-2 #section-2-content #section-2-header {
       font-family: Patua One;
       font-weight: 100;
@@ -469,6 +541,9 @@ header {
       margin: 20px 0px 40px 0px;
       font-family: Taviraj light;
       font-size: 1.4rem; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content #section-2-buttons {
+          text-align: right; } }
       #section-2 #section-2-content #section-2-buttons a:link,
       #section-2 #section-2-content #section-2-buttons a:visited {
         background-color: #fff;
@@ -486,6 +561,9 @@ header {
         padding: 5px 10px 5px 10px;
         font-family: Patua One;
         font-size: 1.8rem; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-content #section-2-buttons #join-button {
+            text-align: center; } }
         #section-2 #section-2-content #section-2-buttons #join-button a:link,
         #section-2 #section-2-content #section-2-buttons #join-button a:visited {
           background-color: #8282EE;
@@ -515,6 +593,10 @@ header {
       background-repeat: no-repeat;
       background-position: -300px 0px;
       height: 45vh; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-desktop aside {
+          height: 30vh;
+          background-position: 0px 0px; } }
     #section-3 #section-3-desktop #section-3-header {
       font-family: Patua One;
       font-size: 1.4rem;
@@ -524,40 +606,49 @@ header {
       margin: 0px 0px 0px 0px;
       padding: 20px 35px 20px 35px;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-desktop #section-3-header {
+          padding: 30px 35px 30px 35px; } }
     #section-3 #section-3-desktop ol {
       list-style: none;
       counter-reset: item; }
-    #section-3 #section-3-desktop li {
-      counter-increment: item;
-      margin-bottom: 30px; }
-    #section-3 #section-3-desktop li:before {
-      padding-top: 8px;
-      margin-right: 0px;
-      content: counter(item);
-      background: #fff;
-      color: #FF8457;
-      width: 1.8em;
-      height: 1.5em;
-      text-align: center;
-      display: inline-block; }
-    #section-3 #section-3-desktop #section-3-text {
-      font-family: Patua One;
-      background-color: #FF8457;
-      color: white;
-      grid-area: section-3;
-      margin: 30px 20px 0px 0px;
-      text-align: left;
-      font-size: 1.9rem; }
-      #section-3 #section-3-desktop #section-3-text a:link,
-      #section-3 #section-3-desktop #section-3-text a:visited {
-        color: #fff;
-        padding: 10px 25px 10px 15px;
-        text-decoration: none;
-        transition: 0.25s;
-        width: 100%; }
-      #section-3 #section-3-desktop #section-3-text a:hover,
-      #section-3 #section-3-desktop #section-3-text a:active {
-        color: #8282EE; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-desktop ol {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 20px 0px 20px 0px; } }
+  #section-3 li {
+    counter-increment: item;
+    margin-bottom: 30px; }
+  #section-3 li:before {
+    padding-top: 8px;
+    margin-right: 0px;
+    content: counter(item);
+    background: #fff;
+    color: #FF8457;
+    width: 1.8em;
+    height: 1.5em;
+    text-align: center;
+    display: inline-block; }
+  #section-3 #section-3-text {
+    font-family: Patua One;
+    background-color: #FF8457;
+    color: white;
+    grid-area: section-3;
+    margin: 30px 20px 0px 0px;
+    text-align: left;
+    font-size: 1.9rem; }
+    #section-3 #section-3-text a:link,
+    #section-3 #section-3-text a:visited {
+      color: #fff;
+      padding: 10px 25px 10px 15px;
+      text-decoration: none;
+      transition: 0.25s;
+      width: 100%; }
+    #section-3 #section-3-text a:hover,
+    #section-3 #section-3-text a:active {
+      color: #8282EE; }
 
 /* =============
     Section 4
@@ -566,22 +657,37 @@ header {
   display: grid;
   grid-template-areas: ". section-4 .";
   grid-template-columns: 0px auto 0px; }
-  #section-4 #section-4-content {
+  #section-4 #section-4-desktop {
     grid-area: section-4; }
-    #section-4 #section-4-content #section-4-header {
+    #section-4 #section-4-desktop #section-4-header {
       font-family: Patua One;
       color: #5340BD;
       grid-area: section-4;
       margin: 50px 20px 20px 20px;
       text-align: left;
       font-size: 1.6rem; }
-    #section-4 #section-4-content aside {
+      @media (min-width: 768px) {
+        #section-4 #section-4-desktop #section-4-header {
+          text-align: center; } }
+    #section-4 #section-4-desktop #section-4-container #section-4-image aside {
       background-image: url("../img/section-4/infovid.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 28vh; }
-    #section-4 #section-4-content p {
+      height: 28vh;
+      grid-area: image; }
+      @media (min-width: 768px) {
+        #section-4 #section-4-desktop #section-4-container #section-4-image aside {
+          margin: 0px 10% 0px 10%;
+          height: 35vh; } }
+      @media (min-width: 768px) {
+        #section-4 #section-4-desktop #section-4-container #section-4-image aside {
+          grid-area: section-4;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "image type"; } }
+    #section-4 #section-4-desktop #section-4-container p {
+      grid-area: type;
       font-family: Taviraj;
       font-weight: 100;
       font-size: 1.5rem;
@@ -589,7 +695,10 @@ header {
       line-height: 2rem;
       margin: 20px 30px 40px 30px;
       text-align: justify; }
-
+      @media (min-width: 768px) {
+        #section-4 #section-4-desktop #section-4-container p {
+          text-align: center;
+          margin: 20px 150px 40px 150px; } }
 /* =============
     Section 5
 ============= */
@@ -691,14 +800,15 @@ header {
         #section-6 #section-6-container ul {
           grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
           grid-template-columns: repeat(4, 1fr); } }
-      #section-6 #section-6-container ul li {
+      #section-6 #section-6-container ul li > div {
         background-position: center;
         background-size: cover;
         border-radius: 100%;
         height: 150px; }
       #section-6 #section-6-container ul #g1 {
-        background-image: url("../img/section-6/pirates.jpg");
         grid-area: g1; }
+        #section-6 #section-6-container ul #g1 > div {
+          background-image: url("../img/section-6/pirates.jpg"); }
       #section-6 #section-6-container ul #g2 {
         background-image: url("../img/section-6/flowerman2.jpg");
         grid-area: g2; }

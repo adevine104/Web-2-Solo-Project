@@ -15,6 +15,16 @@
         margin: 0px 20px 0px 20px;
         text-align: justify;
 
+        @include md{
+            text-align: center;
+            margin: 0px 50px 0px 50px;
+        }
+
+        @include lg{
+            text-align: center;
+            margin: auto 10% auto 10%;
+        }
+
         #section-2-header {
             font-family: Patua One;
             font-weight: 100;
@@ -29,6 +39,10 @@
             margin: 20px 0px 40px 0px;
             font-family: Taviraj light;
             font-size: 1.4rem;
+
+            @include md{
+                text-align: right;
+            }
 
             a:link,
             a:visited {
@@ -51,6 +65,10 @@
                 padding: 5px 10px 5px 10px;
                 font-family: Patua One;
                 font-size: 1.8rem;
+
+                @include md{
+                    text-align: center;
+                }
 
                 a:link,
                 a:visited {

@@ -49,15 +49,22 @@
             }
 
             li {
-                background-position: center;
-                background-size: cover;
-                border-radius: 100%;
-                height: 150px;
+            
+                >div{
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 100%;
+                    height: 150px;
+
+                }
             }
 
             #g1 {
-                background-image: url("../img/section-6/pirates.jpg");
                 grid-area: g1;
+                >div
+                {
+                    background-image: url("../img/section-6/pirates.jpg");
+                }
             }
 
             #g2 {
