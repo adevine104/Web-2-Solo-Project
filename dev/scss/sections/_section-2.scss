@@ -82,8 +82,9 @@
 
                 a:hover,
                 a:active {
-                    background-color: $lilac;
-                    color: $gold;
+                    background-color: $white;
+                    border: 4px solid $lilac;
+                    color: $lilac;
                 }
             }
         }

@@ -24,8 +24,9 @@
         }
         
         ul {
+            margin-bottom: 30px;
             display: grid;
-            gap: 30px;
+            gap: 20px;
             grid-template-areas: 
             "g1 g2"
             "g3 g4";
@@ -49,66 +50,105 @@
             }
 
             li {
-            
-                >div{
-                    background-position: center;
-                    background-size: cover;
-                    border-radius: 100%;
-                    height: 150px;
+                font-size: 1.2rem;
+                font-family: Taviraj;
+                font-weight: 300;
+                text-align: center;
 
+                a:link,
+                a:visited {
+                    color: $black;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    width: 100%;
+                }
+
+                a:hover,
+                a:active {
+                    color: $lilac;
+                }
+
+                #pic{
+                    background-position: auto -150px;
+                    background-size: center;
+                    // border-radius: 100%;
+                    // height: 160px;
+                    // clip-path: circle(50% at 50% 50%);
+                    width: 130px;
+                    height: 130px;
+                    background: transparent;
+                    -moz-border-radius: 80px;
+                    -webkit-border-radius: 80px;
+                    border-radius: 80px;
+
+                }
+
+                #text{
+                    margin-top: 20px;
                 }
             }
 
+
             #g1 {
                 grid-area: g1;
-                >div
-                {
+                #pic{
                     background-image: url("../img/section-6/pirates.jpg");
                 }
             }
 
             #g2 {
+                #pic{
                 background-image: url("../img/section-6/flowerman2.jpg");
+                }
                 grid-area: g2;
             }
 
             #g3 {
+                #pic{
                 background-image: url("../img/section-6/bigface.jpg");
+                }
                 grid-area: g3;
             }
 
             #g4 {
+                #pic{
                 background-image: url("../img/section-6/orangeman2.jpg");
+                }
                 grid-area: g4;
             }
 
-            #g5 {
-                background-image: url("../img/section-6/saxguy.jpg");
 
+            #g5 {
+                #pic{
+                background-image: url("../img/section-6/saxguy.jpg");
+                }
                 @include md {
                     grid-area: g5;
                 }
             }
 
             #g6 {
+                #pic{
                 background-image: url("../img/section-6/singguy.jpg");
-
+                }
                 @include md {
                     grid-area: g6;
                 }
             }
 
             #g7 {
+                #pic{
                 background-image: url("../img/section-6/whitehat.jpg");
-                
+                }
                 @include lg {
                     grid-area: g7;
                 }
             }
 
             #g8 {
+                #pic{
                 background-image: url("../img/section-6/pinkbirdman.jpg");
-                
+                }
                 @include lg {
                     grid-area: g8;
                 }

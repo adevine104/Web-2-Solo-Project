@@ -1,3 +1,59 @@
 /* =============
     Navigation
 ============= */
+#nav-container {
+    ul {
+        // height: 100%;
+
+        @include lg {
+            display: flex;
+        }
+
+        li {
+
+            @include lg {
+                // align-items: center;
+                display: flex;
+            }
+            
+            a:link,
+            a:visited {
+                font-family: 'Taviraj', serif;
+                color: $purple;
+                text-decoration: none;
+                transition: 0.25s;
+                padding: 0px 0;
+                display: inline-block;
+                width: 100%;
+                font-weight: 700;
+
+                @include lg{
+                    font-size: rem-calc(20);
+                    padding: 0px 0px;
+                }
+            }
+
+            a:hover,
+            a:active {
+                color: $gold;
+            }
+        }
+
+        li:first-child{
+            @include lg{
+                a{
+                    border: none;
+                }
+            }
+        }
+
+        li:last-child{
+            border: none;
+            @include lg{
+                a{
+                    border: none;
+                }
+            }
+        }
+    }
+}

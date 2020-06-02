@@ -318,10 +318,32 @@ template {
     Base
 ============= */
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   ul li {
     list-style: none; }
 
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-lg {
+      display: block; } }
+.content-spacing {
+  margin-top: 50px; }
+  @media (min-width: 768px) {
+    .content-spacing {
+      margin-top: 55px; } }
+  @media (min-width: 992px) {
+    .content-spacing {
+      margin-top: 700px; } }
+  @media (min-width: 1200px) {
+    .content-spacing {
+      margin-top: 100px; } }
 /* =============
     Typography
 ============= */
@@ -359,6 +381,42 @@ textarea {
 /* =============
     Navigation
 ============= */
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex; } }
+
+@media (min-width: 992px) {
+  #nav-container ul li {
+    display: flex; } }
+
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  font-family: 'Taviraj', serif;
+  color: #5340BD;
+  text-decoration: none;
+  transition: 0.25s;
+  padding: 0px 0;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700; }
+  @media (min-width: 992px) {
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      font-size: 1.25rem;
+      padding: 0px 0px; } }
+#nav-container ul li a:hover,
+#nav-container ul li a:active {
+  color: #DCAC03; }
+
+@media (min-width: 992px) {
+  #nav-container ul li:first-child a {
+    border: none; } }
+
+#nav-container ul li:last-child {
+  border: none; }
+  @media (min-width: 992px) {
+    #nav-container ul li:last-child a {
+      border: none; } }
 /* =============
     Header
 ============= */
@@ -402,7 +460,8 @@ header {
       align-items: center;
       display: flex;
       grid-area: burger;
-      padding: 20px; }
+      padding: 20px;
+      font-size: 1.5rem; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -419,7 +478,7 @@ header {
       header > div #nav-container a:visited {
         background-color: #fff;
         color: #5340BD;
-        padding: 20px 45px;
+        padding: 10px 35px;
         text-decoration: none;
         transition: 0.25s;
         width: 100%; }
@@ -440,27 +499,37 @@ header {
     Footer
 ============= */
 footer {
-  background-color: #8282EE;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 50px 0; }
+  padding: 0px 0px 50px 0px; }
   footer #footer-content {
     grid-area: footer; }
-    footer #footer-content h1 {
-      font-size: 1.25rem; }
-      footer #footer-content h1 span {
-        color: #fff; }
+    footer #footer-content > div {
+      background-color: #8282EE;
+      height: 10vh;
+      width: 100%; }
+    footer #footer-content h3 {
+      margin: 20px 10px 20px 10px;
+      font-size: 1.25rem;
+      font-family: Taviraj;
+      font-weight: 300; }
+    footer #footer-content h4 {
+      margin: 5px 10px 20px 10px;
+      font-size: 1.25rem;
+      font-family: Taviraj;
+      font-weight: 300; }
     footer #footer-content ul {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      font-size: 1rem; }
       footer #footer-content ul li {
-        margin: 0 20px; }
+        margin: 10px 10px; }
         footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
           font-size: 1.875rem;
           color: #DCAC03;
           transition: 0.25s; }
         footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
-          color: #fff; }
+          color: #5340BD; }
 
 /* =============
     Section 1
@@ -477,6 +546,9 @@ footer {
   @media (min-width: 992px) {
     #section-1 {
       height: 80vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 90vh; } }
   #section-1 > div {
     font-family: Patua One;
     text-align: center;
@@ -497,6 +569,12 @@ footer {
           font-size: 4.8rem;
           line-height: 4.5rem;
           margin: 50px 0px 0px 50px; } }
+      @media (min-width: 992px) {
+        #section-1 > div h1 {
+          margin-top: 80px; } }
+      @media (min-width: 1200px) {
+        #section-1 > div h1 {
+          margin-top: 100px; } }
     #section-1 > div h2 {
       font-size: 1.5rem;
       line-height: 3.5rem;
@@ -574,8 +652,9 @@ footer {
           width: 100%; }
         #section-2 #section-2-content #section-2-buttons #join-button a:hover,
         #section-2 #section-2-content #section-2-buttons #join-button a:active {
-          background-color: #8282EE;
-          color: #DCAC03; }
+          background-color: #fff;
+          border: 4px solid #8282EE;
+          color: #8282EE; }
 
 /* =============
     Section 3
@@ -609,46 +688,35 @@ footer {
       @media (min-width: 768px) {
         #section-3 #section-3-desktop #section-3-header {
           padding: 30px 35px 30px 35px; } }
-    #section-3 #section-3-desktop ol {
-      list-style: none;
-      counter-reset: item; }
-      @media (min-width: 768px) {
-        #section-3 #section-3-desktop ol {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          padding: 20px 0px 20px 0px; } }
-  #section-3 li {
-    counter-increment: item;
-    margin-bottom: 30px; }
-  #section-3 li:before {
-    padding-top: 8px;
-    margin-right: 0px;
-    content: counter(item);
-    background: #fff;
-    color: #FF8457;
-    width: 1.8em;
-    height: 1.5em;
-    text-align: center;
-    display: inline-block; }
-  #section-3 #section-3-text {
-    font-family: Patua One;
-    background-color: #FF8457;
-    color: white;
-    grid-area: section-3;
-    margin: 30px 20px 0px 0px;
-    text-align: left;
-    font-size: 1.9rem; }
-    #section-3 #section-3-text a:link,
-    #section-3 #section-3-text a:visited {
-      color: #fff;
-      padding: 10px 25px 10px 15px;
-      text-decoration: none;
-      transition: 0.25s;
-      width: 100%; }
-    #section-3 #section-3-text a:hover,
-    #section-3 #section-3-text a:active {
-      color: #8282EE; }
+    #section-3 #section-3-desktop ul {
+      display: grid;
+      grid-area: section-3;
+      grid-template-columns: repeat(2, 20%);
+      grid-template-rows: repeat(5, 2fr); }
+    #section-3 #section-3-desktop .number {
+      background-color: white;
+      color: #FF8457;
+      width: 40px;
+      height: 40px;
+      text-align: center; }
+    #section-3 #section-3-desktop #section-3-text {
+      font-family: Patua One;
+      background-color: #FF8457;
+      color: white;
+      grid-area: section-3;
+      margin: 30px 20px 0px 0px;
+      text-align: left;
+      font-size: 1.9rem; }
+      #section-3 #section-3-desktop #section-3-text a:link,
+      #section-3 #section-3-desktop #section-3-text a:visited {
+        color: #fff;
+        padding: 10px 25px 10px 15px;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 100%; }
+      #section-3 #section-3-desktop #section-3-text a:hover,
+      #section-3 #section-3-desktop #section-3-text a:active {
+        color: #8282EE; }
 
 /* =============
     Section 4
@@ -663,42 +731,47 @@ footer {
       font-family: Patua One;
       color: #5340BD;
       grid-area: section-4;
-      margin: 50px 20px 20px 20px;
+      margin: 50px 20px 40px 20px;
       text-align: left;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      padding-right: 20px; }
       @media (min-width: 768px) {
         #section-4 #section-4-desktop #section-4-header {
           text-align: center; } }
-    #section-4 #section-4-desktop #section-4-container #section-4-image aside {
+    @media (min-width: 992px) {
+      #section-4 #section-4-desktop #section-4-container {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: " image type"; } }
+    #section-4 #section-4-desktop #section-4-container #section-4-image {
+      grid-area: image;
       background-image: url("../img/section-4/infovid.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 28vh;
-      grid-area: image; }
+      height: 28vh; }
       @media (min-width: 768px) {
-        #section-4 #section-4-desktop #section-4-container #section-4-image aside {
+        #section-4 #section-4-desktop #section-4-container #section-4-image {
           margin: 0px 10% 0px 10%;
-          height: 35vh; } }
-      @media (min-width: 768px) {
-        #section-4 #section-4-desktop #section-4-container #section-4-image aside {
-          grid-area: section-4;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: "image type"; } }
-    #section-4 #section-4-desktop #section-4-container p {
-      grid-area: type;
-      font-family: Taviraj;
-      font-weight: 100;
-      font-size: 1.5rem;
-      grid-area: section-4;
-      line-height: 2rem;
-      margin: 20px 30px 40px 30px;
-      text-align: justify; }
-      @media (min-width: 768px) {
-        #section-4 #section-4-desktop #section-4-container p {
-          text-align: center;
-          margin: 20px 150px 40px 150px; } }
+          height: 30vh; } }
+      @media (min-width: 992px) {
+        #section-4 #section-4-desktop #section-4-container #section-4-image {
+          margin: 0px 10% 0px 10%;
+          height: 47vh; } }
+    #section-4 #section-4-desktop #section-4-container #section-4-content {
+      grid-area: type; }
+      #section-4 #section-4-desktop #section-4-container #section-4-content p {
+        font-family: Taviraj;
+        font-weight: 100;
+        font-size: 1.5rem;
+        grid-area: section-4;
+        line-height: 2rem;
+        text-align: justify;
+        margin: 20px 30px 20px 30px; }
+        @media (min-width: 768px) {
+          #section-4 #section-4-desktop #section-4-container #section-4-content p {
+            text-align: center;
+            margin: 20px 150px 40px 150px; } }
 /* =============
     Section 5
 ============= */
@@ -708,7 +781,13 @@ footer {
   grid-template-columns: 0px auto 0px; }
   #section-5 #section-5-content {
     grid-area: section-5;
-    background-color: #6FC1BB; }
+    background-color: #30A69D; }
+    #section-5 #section-5-content #triangle {
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-right: 370px solid #30A69D;
+      border-bottom: 70px solid #6FC1BB; }
     #section-5 #section-5-content #section-5-header {
       font-family: Patua One;
       background-color: #029287;
@@ -788,8 +867,9 @@ footer {
       padding: 10px 0px 10px 0px;
       margin: 20px 0px 30px 0px; }
     #section-6 #section-6-container ul {
+      margin-bottom: 30px;
       display: grid;
-      gap: 30px;
+      gap: 20px;
       grid-template-areas: "g1 g2" "g3 g4";
       grid-template-rows: repeat(2, 1fr); }
       @media (min-width: 768px) {
@@ -800,44 +880,67 @@ footer {
         #section-6 #section-6-container ul {
           grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
           grid-template-columns: repeat(4, 1fr); } }
-      #section-6 #section-6-container ul li > div {
-        background-position: center;
-        background-size: cover;
-        border-radius: 100%;
-        height: 150px; }
+      #section-6 #section-6-container ul li {
+        font-size: 1.2rem;
+        font-family: Taviraj;
+        font-weight: 300;
+        text-align: center; }
+        #section-6 #section-6-container ul li a:link,
+        #section-6 #section-6-container ul li a:visited {
+          color: #000;
+          text-decoration: none;
+          transition: 0.25s;
+          width: 100%; }
+        #section-6 #section-6-container ul li a:hover,
+        #section-6 #section-6-container ul li a:active {
+          color: #8282EE; }
+        #section-6 #section-6-container ul li #pic {
+          background-position: auto -150px;
+          background-size: center;
+          width: 130px;
+          height: 130px;
+          background: transparent;
+          -moz-border-radius: 80px;
+          -webkit-border-radius: 80px;
+          border-radius: 80px; }
+        #section-6 #section-6-container ul li #text {
+          margin-top: 20px; }
       #section-6 #section-6-container ul #g1 {
         grid-area: g1; }
-        #section-6 #section-6-container ul #g1 > div {
+        #section-6 #section-6-container ul #g1 #pic {
           background-image: url("../img/section-6/pirates.jpg"); }
       #section-6 #section-6-container ul #g2 {
-        background-image: url("../img/section-6/flowerman2.jpg");
         grid-area: g2; }
+        #section-6 #section-6-container ul #g2 #pic {
+          background-image: url("../img/section-6/flowerman2.jpg"); }
       #section-6 #section-6-container ul #g3 {
-        background-image: url("../img/section-6/bigface.jpg");
         grid-area: g3; }
+        #section-6 #section-6-container ul #g3 #pic {
+          background-image: url("../img/section-6/bigface.jpg"); }
       #section-6 #section-6-container ul #g4 {
-        background-image: url("../img/section-6/orangeman2.jpg");
         grid-area: g4; }
-      #section-6 #section-6-container ul #g5 {
+        #section-6 #section-6-container ul #g4 #pic {
+          background-image: url("../img/section-6/orangeman2.jpg"); }
+      #section-6 #section-6-container ul #g5 #pic {
         background-image: url("../img/section-6/saxguy.jpg"); }
-        @media (min-width: 768px) {
-          #section-6 #section-6-container ul #g5 {
-            grid-area: g5; } }
-      #section-6 #section-6-container ul #g6 {
+      @media (min-width: 768px) {
+        #section-6 #section-6-container ul #g5 {
+          grid-area: g5; } }
+      #section-6 #section-6-container ul #g6 #pic {
         background-image: url("../img/section-6/singguy.jpg"); }
-        @media (min-width: 768px) {
-          #section-6 #section-6-container ul #g6 {
-            grid-area: g6; } }
-      #section-6 #section-6-container ul #g7 {
+      @media (min-width: 768px) {
+        #section-6 #section-6-container ul #g6 {
+          grid-area: g6; } }
+      #section-6 #section-6-container ul #g7 #pic {
         background-image: url("../img/section-6/whitehat.jpg"); }
-        @media (min-width: 992px) {
-          #section-6 #section-6-container ul #g7 {
-            grid-area: g7; } }
-      #section-6 #section-6-container ul #g8 {
+      @media (min-width: 992px) {
+        #section-6 #section-6-container ul #g7 {
+          grid-area: g7; } }
+      #section-6 #section-6-container ul #g8 #pic {
         background-image: url("../img/section-6/pinkbirdman.jpg"); }
-        @media (min-width: 992px) {
-          #section-6 #section-6-container ul #g8 {
-            grid-area: g8; } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-container ul #g8 {
+          grid-area: g8; } }
 /* =============
     Section 7
 ============= */

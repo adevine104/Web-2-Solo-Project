@@ -14,56 +14,62 @@
             font-family: Patua One;
             color: $purple;
             grid-area: section-4;
-            margin: 50px 20px 20px 20px;
+            margin: 50px 20px 40px 20px;
             text-align: left;
             font-size: 1.6rem;
+            padding-right: 20px;
 
             @include md{
                 text-align: center;
-
                 }
             }
 
             #section-4-container{
+
+                @include lg{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: " image type";
+                }
         
-            #section-4-image{
-                aside{
+                #section-4-image{
+                    grid-area: image;
                     background-image: url('../img/section-4/infovid.jpg');
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
                     height: 28vh;
-                    grid-area: image;
-
+                    
                     @include md{
                         margin: 0px 10% 0px 10%;
-                        height: 35vh;
+                        height: 30vh;
                     }
 
-                    @include md{
-                        grid-area: section-4;
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-areas: "image type";
-                    }   
+                    @include lg{
+                        margin: 0px 10% 0px 10%;
+                        height: 47vh;
                     }
+                  
                 }
             
+           #section-4-content{
+            grid-area: type;
+
             p{
-                grid-area: type;
                 font-family: Taviraj;
                 font-weight: 100;
                 font-size: 1.5rem;
                 grid-area: section-4;
                 line-height: 2rem;
-                margin: 20px 30px 40px 30px;
                 text-align: justify;  
+                margin: 20px 30px 20px 30px;
 
                 @include md{
                     text-align: center;
                     margin: 20px 150px 40px 150px;
                 }
             }
+           }
         }
 }
 }

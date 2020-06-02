@@ -43,39 +43,58 @@
                 }
             }
 
-            ol {
-                list-style: none;
-                counter-reset: item;
+            ul{
+                display: grid;
+                grid-area: section-3;
+                grid-template-columns: repeat(2, 20%);
+                grid-template-rows: repeat(5, 2fr);
+            }
+
+            li{
+
+            }
+
+            .number{
+                background-color: white;
+                color: $lightorange;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+            }
+
+            // ol {
+            //     list-style: none;
+            //     counter-reset: item;
             
 
-                @include md{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    padding: 20px 0px 20px 0px;
-                    // line-height: 2rem;
-                    // list-style-position:inside;
-                    // text-align:  center;
-                    }
+            //     @include md{
+            //         display: flex;
+            //         flex-wrap: wrap;
+            //         justify-content: center;
+            //         padding: 20px 0px 20px 0px;
+            //         // line-height: 2rem;
+            //         // list-style-position:inside;
+            //         // text-align:  center;
+            //         }
                     
-            }
-            }
+            // }
+            // }
 
-              li {
-                counter-increment: item;
-                margin-bottom: 30px;
-              }
-              li:before {
-                padding-top: 8px;
-                margin-right: 0px;
-                content: counter(item);
-                background: $white;
-                color: $lightorange;
-                width: 1.8em;
-                height: 1.5em;
-                text-align: center;
-                display: inline-block;
-              }
+            //   li {
+            //     counter-increment: item;
+            //     margin-bottom: 30px;
+            //   }
+            //   li:before {
+            //     padding-top: 8px;
+            //     margin-right: 0px;
+            //     content: counter(item);
+            //     background: $white;
+            //     color: $lightorange;
+            //     width: 1.8em;
+            //     height: 1.5em;
+            //     text-align: center;
+            //     display: inline-block;
+            //   }
 
             #section-3-text {
                 font-family: Patua One;
@@ -102,4 +121,4 @@
             }
         }
 
-    
+}

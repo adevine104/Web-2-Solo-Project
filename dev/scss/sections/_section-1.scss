@@ -15,6 +15,9 @@
     @include lg{
         height: 80vh;
     }
+    @include xl{
+        height: 90vh;
+    }
 
     >div{
         font-family: Patua One;
@@ -39,6 +42,13 @@
                 line-height: 4.5rem;
                 margin: 50px 0px 0px 50px;
             }
+            @include lg{
+                margin-top: 80px;
+            }
+            @include xl{
+                margin-top: 100px;
+            }
+
         }
 
         h2{

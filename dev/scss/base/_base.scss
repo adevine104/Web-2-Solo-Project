@@ -4,9 +4,36 @@
 
 ul{
     padding: 0;
+    margin: 0;
 
     li{
         list-style: none;
     }
 }
 
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-lg{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.content-spacing{
+    margin-top: 50px;
+    @include md{
+        margin-top: 55px;
+    }
+    @include lg{
+        margin-top: 700px;
+    }
+    @include xl{
+        margin-top: 100px;
+    }
+}

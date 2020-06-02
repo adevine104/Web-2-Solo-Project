@@ -28,9 +28,6 @@ header {
             text-align: right;
             font-family: Taviraj;
             font-weight: 500;
-            // border: solid;
-            // border-color: $purple;
-            // border-radius: 100%;
 
             a:link,
             a:visited {
@@ -56,6 +53,7 @@ header {
             display: flex;
             grid-area: burger;
             padding: 20px;
+            font-size: 1.5rem;
 
             @include lg {
                 display: none !important;
@@ -74,13 +72,11 @@ header {
             font-family: Taviraj;
             font-weight: 500;
             
-            
-
                 a:link,
                 a:visited {
                     background-color: $white;
                     color: $purple;
-                    padding: 20px 45px;
+                    padding: 10px 35px;
                     text-decoration: none;
                     transition: 0.25s;
                     width: 100%;

@@ -9,7 +9,30 @@
 
     #section-5-content{
         grid-area: section-5;
-        background-color: $lightaqua;
+        background-color: $midaqua;
+
+        #triangle{ 
+            width: 0; 
+            height: 0; 
+            border-top: 0px solid transparent;
+            border-right: 370px solid $midaqua;
+            border-bottom: 70px solid $lightaqua;
+        }
+
+        // #oval {
+        //     width: 250px;
+        //     height: 50;
+        //     background-color: white;
+        //     border-right: 70px solid transparent;
+        //     // border-top: 70px solid #ffde00;
+        //     border-left: 70px solid $lightaqua;
+        //     border-bottom: 70px solid $lightaqua;
+        //     border-right: 70px solid $lightaqua;
+        //     // border-top-left-radius: 70px;
+        //     // border-top-right-radius: 70px;
+        //     border-bottom-left-radius: 70px;
+        //     border-bottom-right-radius: 70px;
+        //  }
 
         #section-5-header {
             font-family: Patua One;
