@@ -11,6 +11,16 @@
         grid-area: section-7;
         background-color: $lightgreen;
 
+        #triangle{
+            
+            @include md{
+             width: 0; 
+             height: 0; 
+             border-top: 100px solid white; 
+             border-right: 100px solid transparent; 
+            }
+         }
+
         h1{
             font-family: Patua One;
             background-color: $darkgreen;
@@ -28,6 +38,11 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 28vh;
+
+            @include md{
+                margin: 20px 80px 10px 80px;
+                height: 34vh;
+            }
             }
 
         p{
@@ -38,6 +53,11 @@
             line-height: 2rem;
             margin: 30px 30px 50px 30px;
             text-align: justify;
+
+            @include md{
+                text-align: center;
+                margin: 30px 138px 50px 138px;
+            }
             }
         
     }

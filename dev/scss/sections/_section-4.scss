@@ -28,8 +28,9 @@
 
                 @include lg{
                     display: grid;
-                    grid-template-columns: 50% auto;
+                    grid-template-columns: 60% auto;
                     grid-template-areas: " image type";
+                    margin-bottom: 80px;
                 }
         
                 #section-4-image{
@@ -42,11 +43,11 @@
                     
                     @include md{
                         margin: 0px 10% 0px 10%;
-                        height: 30vh;
+                        height: 35vh;
                     }
 
                     @include lg{
-                        margin: 0px 10% 0px 10%;
+                        margin: 0px 10% 0px 0;
                         height: 47vh;
                     }
                   
@@ -67,6 +68,13 @@
                 @include md{
                     text-align: center;
                     margin: 20px 150px 40px 150px;
+                    font-size: 1.7;
+                }
+
+                @include lg{
+                    text-align: left;
+                    margin: 100px 150px 40px 10px;
+                    font-size: 1.7;
                 }
             }
            }

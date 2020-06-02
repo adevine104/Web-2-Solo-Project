@@ -666,6 +666,12 @@ footer {
   grid-template-columns: 0px auto 0px; }
   #section-3 #section-3-desktop {
     grid-area: section-3; }
+    @media (min-width: 992px) {
+      #section-3 #section-3-desktop #triangle {
+        width: 0;
+        height: 0;
+        border-top: 100px solid white;
+        border-right: 100px solid transparent; } }
     #section-3 #section-3-desktop aside {
       background-image: url("../img/section-3/blueface.jpg");
       background-size: cover;
@@ -741,8 +747,9 @@ footer {
     @media (min-width: 992px) {
       #section-4 #section-4-desktop #section-4-container {
         display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: " image type"; } }
+        grid-template-columns: 60% auto;
+        grid-template-areas: " image type";
+        margin-bottom: 80px; } }
     #section-4 #section-4-desktop #section-4-container #section-4-image {
       grid-area: image;
       background-image: url("../img/section-4/infovid.jpg");
@@ -753,10 +760,10 @@ footer {
       @media (min-width: 768px) {
         #section-4 #section-4-desktop #section-4-container #section-4-image {
           margin: 0px 10% 0px 10%;
-          height: 30vh; } }
+          height: 35vh; } }
       @media (min-width: 992px) {
         #section-4 #section-4-desktop #section-4-container #section-4-image {
-          margin: 0px 10% 0px 10%;
+          margin: 0px 10% 0px 0;
           height: 47vh; } }
     #section-4 #section-4-desktop #section-4-container #section-4-content {
       grid-area: type; }
@@ -771,7 +778,13 @@ footer {
         @media (min-width: 768px) {
           #section-4 #section-4-desktop #section-4-container #section-4-content p {
             text-align: center;
-            margin: 20px 150px 40px 150px; } }
+            margin: 20px 150px 40px 150px;
+            font-size: 1.7; } }
+        @media (min-width: 992px) {
+          #section-4 #section-4-desktop #section-4-container #section-4-content p {
+            text-align: left;
+            margin: 100px 150px 40px 10px;
+            font-size: 1.7; } }
 /* =============
     Section 5
 ============= */
@@ -797,21 +810,38 @@ footer {
       padding: 40px 0px 40px 0px;
       text-align: center;
       font-size: 1.6rem; }
-    #section-5 #section-5-content #section-5-countdown {
+    @media (min-width: 768px) {
+      #section-5 #section-5-content #section-5-container {
+        display: grid;
+        grid-template-columns: 56% auto;
+        grid-template-areas: "image clock"; } }
+    @media (min-width: 992px) {
+      #section-5 #section-5-content #section-5-container {
+        display: grid;
+        grid-template-columns: 56% auto;
+        grid-template-areas: "clock image"; } }
+    #section-5 #section-5-content #section-5-container #section-5-countdown {
+      grid-area: clock;
       font-family: Taviraj;
       font-weight: 700;
       color: white;
       text-align: center;
       font-size: 1.2rem;
       margin-bottom: 40px; }
-      #section-5 #section-5-content #section-5-countdown h4 {
+      @media (min-width: 768px) {
+        #section-5 #section-5-content #section-5-container #section-5-countdown {
+          margin-top: 30%; } }
+      @media (min-width: 992px) {
+        #section-5 #section-5-content #section-5-container #section-5-countdown {
+          margin-top: 30px; } }
+      #section-5 #section-5-content #section-5-container #section-5-countdown h4 {
         display: inline-block;
         text-align: center;
         font-size: 2rem;
         padding: 10px 10px 0px 10px; }
-      #section-5 #section-5-content #section-5-countdown #c-5-numbers {
+      #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-numbers {
         width: 100%; }
-        #section-5 #section-5-content #section-5-countdown #c-5-numbers li {
+        #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-numbers li {
           list-style: none;
           display: inline-block;
           width: calc(100% / 4);
@@ -821,31 +851,68 @@ footer {
           border-radius: 100%;
           height: 58px;
           padding-top: 33px;
-          margin: 0px 10px 0px 10px;
+          margin: 10px 10px 0px 10px;
           font-size: 1.6rem; }
-      #section-5 #section-5-content #section-5-countdown #c-5-words {
+          @media (min-width: 768px) {
+            #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-numbers li {
+              height: 50px;
+              padding-top: 25px; } }
+          @media (min-width: 992px) {
+            #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-numbers li {
+              height: 50px;
+              padding-top: 25px;
+              margin-left: 300px;
+              display: block;
+              text-align: center; } }
+      #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-words {
         width: 100%; }
-        #section-5 #section-5-content #section-5-countdown #c-5-words li {
+        #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-words li {
           list-style: none;
           display: inline-block;
           width: calc(100% / 4);
           text-align: center;
-          margin: 0px 10px 0px 10px;
+          margin: 10px 10px 0px 10px;
           font-size: 1.4rem; }
-    #section-5 #section-5-content aside {
+          @media (min-width: 992px) {
+            #section-5 #section-5-content #section-5-container #section-5-countdown #c-5-words li {
+              display: block;
+              text-align: center;
+              margin-left: 300px; } }
+    #section-5 #section-5-content #section-5-container #section-5-image {
+      grid-area: image;
       background-image: url("../img/section-5/livestreamvid.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 28vh; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-content #section-5-container #section-5-image {
+          margin: 30px 0px 0px 0px;
+          height: 28vh; } }
+      @media (min-width: 992px) {
+        #section-5 #section-5-content #section-5-container #section-5-image {
+          margin: 0px 0px 0px 0;
+          height: 47vh; } }
     #section-5 #section-5-content h6 {
       font-family: Taviraj;
       font-weight: 700;
       color: white;
       text-align: right;
       font-size: 1.2rem;
-      margin: 10px 10px 20px 20px; }
-
+      margin: 10px 10px 20px 20px;
+      padding-left: 150px; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-content h6 {
+          text-align: left;
+          margin: 20px 0px;
+          padding: 0px 0px 0px 20px;
+          font-size: 1.5rem; } }
+      @media (min-width: 992px) {
+        #section-5 #section-5-content h6 {
+          text-align: right;
+          margin: 20px 0px;
+          padding: 0px 0px 0px 20px;
+          font-size: 1.5rem; } }
 /* =============
     Section 6
 ============= */
@@ -895,14 +962,16 @@ footer {
         #section-6 #section-6-container ul li a:active {
           color: #8282EE; }
         #section-6 #section-6-container ul li #pic {
-          background-position: auto -150px;
-          background-size: center;
-          width: 130px;
-          height: 130px;
-          background: transparent;
-          -moz-border-radius: 80px;
-          -webkit-border-radius: 80px;
-          border-radius: 80px; }
+          background-position: center;
+          background-size: cover;
+          border-radius: 100%;
+          height: 160px; }
+          @media (min-width: 768px) {
+            #section-6 #section-6-container ul li #pic {
+              height: 230px; } }
+          @media (min-width: 992px) {
+            #section-6 #section-6-container ul li #pic {
+              height: 280px; } }
         #section-6 #section-6-container ul li #text {
           margin-top: 20px; }
       #section-6 #section-6-container ul #g1 {
@@ -951,6 +1020,12 @@ footer {
   #section-7 #section-7-content {
     grid-area: section-7;
     background-color: #94C22E; }
+    @media (min-width: 768px) {
+      #section-7 #section-7-content #triangle {
+        width: 0;
+        height: 0;
+        border-top: 100px solid white;
+        border-right: 100px solid transparent; } }
     #section-7 #section-7-content h1 {
       font-family: Patua One;
       background-color: #8BB62B;
@@ -966,6 +1041,10 @@ footer {
       background-repeat: no-repeat;
       background-position: center;
       height: 28vh; }
+      @media (min-width: 768px) {
+        #section-7 #section-7-content aside {
+          margin: 20px 80px 10px 80px;
+          height: 34vh; } }
     #section-7 #section-7-content p {
       font-family: Taviraj;
       font-weight: 100;
@@ -974,7 +1053,10 @@ footer {
       line-height: 2rem;
       margin: 30px 30px 50px 30px;
       text-align: justify; }
-
+      @media (min-width: 768px) {
+        #section-7 #section-7-content p {
+          text-align: center;
+          margin: 30px 138px 50px 138px; } }
 /* =============
     Section 8
 ============= */
@@ -997,6 +1079,9 @@ footer {
       background-repeat: no-repeat;
       background-position: center;
       height: 28vh; }
+      @media (min-width: 768px) {
+        #section-8 #section-8-content aside {
+          margin: 20px 120px 10px 120px; } }
     #section-8 #section-8-content p {
       font-family: Taviraj;
       font-weight: 100;
@@ -1005,11 +1090,20 @@ footer {
       line-height: 2rem;
       margin: 20px 30px 30px 30px;
       text-align: justify; }
+      @media (min-width: 768px) {
+        #section-8 #section-8-content p {
+          margin: 20px 180px 10px 180px;
+          text-align: center; } }
     #section-8 #section-8-content #section-8-button {
       text-align: center;
       margin: 10px 0px 40px 0px;
       font-family: Taviraj light;
       font-size: 1.4rem; }
+      @media (min-width: 768px) {
+        #section-8 #section-8-content #section-8-button {
+          text-align: right;
+          margin-right: 50px;
+          margin-top: 25px; } }
       #section-8 #section-8-content #section-8-button a:link,
       #section-8 #section-8-content #section-8-button a:visited {
         background-color: #fff;

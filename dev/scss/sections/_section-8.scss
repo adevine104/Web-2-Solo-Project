@@ -25,6 +25,10 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 28vh;
+
+            @include md{
+                margin: 20px 120px 10px 120px;
+            }
             }
             
             p{
@@ -35,6 +39,11 @@
                 line-height: 2rem;
                 margin: 20px 30px 30px 30px;
                 text-align: justify;  
+
+                @include md{
+                    margin: 20px 180px 10px 180px;
+                    text-align: center;
+                }
             }
 
             #section-8-button{
@@ -42,6 +51,12 @@
                 margin: 10px 0px 40px 0px;
                 font-family: Taviraj light;
                 font-size: 1.4rem;
+
+                @include md{
+                    text-align: right;
+                    margin-right: 50px;
+                    margin-top: 25px;
+                }
 
                 a:link,
                 a:visited {

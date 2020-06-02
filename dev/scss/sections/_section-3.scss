@@ -10,6 +10,16 @@
     #section-3-desktop {
          grid-area: section-3;
 
+        #triangle{
+            
+           @include lg{
+            width: 0; 
+            height: 0; 
+            border-top: 100px solid white; 
+            border-right: 100px solid transparent; 
+           }
+        }
+
          aside{
             background-image: url('../img/section-3/blueface.jpg');
             background-size: cover;

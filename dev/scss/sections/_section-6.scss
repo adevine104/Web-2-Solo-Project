@@ -69,17 +69,18 @@
                 }
 
                 #pic{
-                    background-position: auto -150px;
-                    background-size: center;
-                    // border-radius: 100%;
-                    // height: 160px;
-                    // clip-path: circle(50% at 50% 50%);
-                    width: 130px;
-                    height: 130px;
-                    background: transparent;
-                    -moz-border-radius: 80px;
-                    -webkit-border-radius: 80px;
-                    border-radius: 80px;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 100%;
+                    height: 160px;
+
+                    @include md{
+                        height: 230px;
+                    }
+
+                    @include lg{
+                        height: 280px;
+                    }
 
                 }
 
