@@ -11,28 +11,6 @@
         grid-area: section-5;
         background-color: $midaqua;
 
-        #triangle{ 
-            width: 0; 
-            height: 0; 
-            border-top: 0px solid transparent;
-            border-right: 370px solid $midaqua;
-            border-bottom: 70px solid $lightaqua;
-        }
-
-        // #oval {
-        //     width: 250px;
-        //     height: 50;
-        //     background-color: white;
-        //     border-right: 70px solid transparent;
-        //     // border-top: 70px solid #ffde00;
-        //     border-left: 70px solid $lightaqua;
-        //     border-bottom: 70px solid $lightaqua;
-        //     border-right: 70px solid $lightaqua;
-        //     // border-top-left-radius: 70px;
-        //     // border-top-right-radius: 70px;
-        //     border-bottom-left-radius: 70px;
-        //     border-bottom-right-radius: 70px;
-        //  }
 
         #section-5-header {
             font-family: Patua One;
@@ -54,7 +32,7 @@
 
         @include lg{
             display: grid;
-            grid-template-columns: 56% auto;
+            grid-template-columns: auto 60%;
             grid-template-areas: "clock image";
         }
 
@@ -73,7 +51,7 @@
             }
 
             @include lg{
-                margin-top: 30px;
+                margin-top: 100px;
             }
 
             h4{
@@ -83,11 +61,9 @@
                 padding: 10px 10px 0px 10px;
             }
 
-            #c-5-numbers{
+            .c-5-numbers{
                 width: 100%;
-
-                li{
-                    list-style: none;
+                list-style: none;
                     display: inline-block;
                     width: calc(100% / 4);
                     text-align: center;
@@ -105,20 +81,19 @@
                     }
 
                     @include lg{
-                        height: 50px;
-                        padding-top: 25px;
-                        margin-left: 300px;
+                        height: 55px;
+                        width: 10vh;
+                        padding-top: 28px;
+                        margin-left: 240px;
                         display: block;
                         text-align: center;
                     }
-                }
+                
             }
 
-            #c-5-words{
+            .c-5-words{
                 width: 100%;
-
-                li{
-                    list-style: none;
+                list-style: none;
                     display: inline-block;
                     width: calc(100% / 4);
                     text-align: center;
@@ -128,9 +103,9 @@
                     @include lg{
                         display: block;
                         text-align: center;
-                        margin-left: 300px;
+                        margin-left: 220px;
                     }
-                }
+                
             }
         }
         
@@ -148,8 +123,9 @@
             }
 
             @include lg{
-                margin: 0px 0px 0px 0;
-                height: 47vh;
+                margin: 60px 0px 0px 0;
+                height: 57vh;
+                // width: 80vh;
             }
             }
 
@@ -173,7 +149,7 @@
 
             @include lg{
                 text-align: right;
-                margin: 20px 0px;
+                margin: 20px 20px 20px 0px;
                 padding: 0px 0px 0px 20px;
                 font-size: 1.5rem;
             }

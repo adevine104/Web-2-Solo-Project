@@ -2,7 +2,7 @@
     Section 3
 ============= */
 #section-3 {
-    background-color: $lightorange;
+    background-color: transparent;
     display: grid;
     grid-template-areas: ". section-3 .";
     grid-template-columns: 0px auto 0px;
@@ -10,15 +10,15 @@
     #section-3-desktop {
          grid-area: section-3;
 
-        #triangle{
-            
-           @include lg{
-            width: 0; 
-            height: 0; 
-            border-top: 100px solid white; 
-            border-right: 100px solid transparent; 
-           }
-        }
+        //  #tab{
+        //     background-image: url('../img/section-3/tabpiccorner1.svg');
+        //     border: 3px solid red;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     background-position: 0px 0px;
+        //     height: 70vh;
+        //     width: 380px;
+        //  }
 
          aside{
             background-image: url('../img/section-3/blueface.jpg');
@@ -29,6 +29,11 @@
 
             @include md{
                 height: 30vh;
+                background-position: 0px 0px;
+            }
+
+            @include lg{
+                height: 60vh;
                 background-position: 0px 0px;
             }
 
@@ -53,15 +58,92 @@
                 }
             }
 
-            ul{
-                display: grid;
+
+            #section-3-list {
+                font-family: Patua One;
+                background-color: transparent;
+                color: white;
                 grid-area: section-3;
-                grid-template-columns: repeat(2, 20%);
-                grid-template-rows: repeat(5, 2fr);
+                margin: 40px 20px 40px 30px;
+                text-align: left;
+                font-size: 1.9rem;
+                position: absolute;
+
+                a:link,
+                a:visited {
+                    color: $white;
+                    padding: 10px 25px 10px 15px;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    width: 100%;
+                }
+
+                a:hover,
+                a:active {
+                    color: $lilac;
+                }
+
+                margin-bottom: 30px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-areas: 
+                    "c1"
+                    "c2"
+                    "c3"
+                    "c4"
+                    "c5";
+                grid-template-rows: repeat(5, 1fr);
+
+                @include md {
+                    #number1-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center
+                    // align-items: stretch;
+                    }
+                }
             }
 
-            li{
+            #triangle{
+                background-image: url('../img/section-3/mobshape1.svg');
+                background-color: $tangerine;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                height: 70vh;
 
+                @include md{
+                    background-image: url('../img/section-3/deskshape1.svg');
+                    background-position: center;
+                    height: 40vh;
+                } 
+
+                @include lg{
+                    height: 60vh;
+                } 
+            }
+                
+            #triangle-2{
+                background-image: url('../img/section-3/mobshape2.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: -10px 0px;
+                height: 20vh;
+                width: 170px;
+
+                @include md{
+                    background-image: url('../img/section-3/deskshape2.svg');
+                    background-position: 80px -106px;
+                    height: 25vh;
+                    width: 610px;
+                }
+
+                @include lg{
+                    background-position: 260px -121px;
+                    height: 40vh;
+                    width: 900px;
+                }
             }
 
             .number{
@@ -71,6 +153,80 @@
                 height: 40px;
                 text-align: center;
             }
+
+            a{
+                margin-left: 40px;
+            }
+
+            #number-1-container{
+                grid-area: c1;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+                grid-template-areas: "n1 w2";
+
+                #number-1 {
+                    grid-area: n1;
+                }
+
+                #word-1 {
+                    grid-area: w1;
+                }
+            }
+
+            #number-2-container{
+                grid-area: c2;
+
+                #number-2 {
+                    grid-area: n2;
+                }
+
+                #word-2 {
+                    grid-area: w2;
+                }
+            }
+
+            #number-3-container{
+                grid-area: c3;
+
+                #number-3 {
+                    grid-area: n3;
+                }
+
+                #word-3 {
+                    grid-area: w3;
+                }
+            }
+
+            #number-4-container{
+                grid-area: c4;
+
+                #number-4 {
+                    grid-area: n4;
+                }
+
+                #word-4 {
+                    grid-area: w4;
+                }
+            }
+
+
+            #number-5-container{
+                grid-area: c5;
+
+                #number-5 {
+                    grid-area: n5;
+                }
+    
+                #word-5 {
+                    grid-area: w5;
+                }
+            }
+            // ul{
+            //     display: grid;
+            //     grid-area: section-3;
+            //     grid-template-columns: repeat(2, 20%);
+            //     grid-template-rows: repeat(5, 2fr);
+            // }
 
             // ol {
             //     list-style: none;
@@ -106,29 +262,6 @@
             //     display: inline-block;
             //   }
 
-            #section-3-text {
-                font-family: Patua One;
-                background-color: $lightorange;
-                color: white;
-                grid-area: section-3;
-                margin: 30px 20px 0px 0px;
-                text-align: left;
-                font-size: 1.9rem;
-
-                a:link,
-                a:visited {
-                    color: $white;
-                    padding: 10px 25px 10px 15px;
-                    text-decoration: none;
-                    transition: 0.25s;
-                    width: 100%;
-                }
-
-                a:hover,
-                a:active {
-                    color: $lilac;
-                }
-            }
         }
 
-}
+    }

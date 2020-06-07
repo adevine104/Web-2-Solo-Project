@@ -43,6 +43,11 @@
                 margin: 20px 80px 10px 80px;
                 height: 34vh;
             }
+
+            @include lg{
+                margin: 20px 180px 10px 180px;
+                height: 70vh;
+            }
             }
 
         p{
@@ -57,6 +62,10 @@
             @include md{
                 text-align: center;
                 margin: 30px 138px 50px 138px;
+            }
+
+            @include lg{
+                margin: 30px 320px 50px 320px;
             }
             }
         
