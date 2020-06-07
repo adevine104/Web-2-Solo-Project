@@ -9,24 +9,14 @@
 
     #section-7-content{
         grid-area: section-7;
-        background-color: $lightgreen;
-
-        #triangle{
-            
-            @include md{
-             width: 0; 
-             height: 0; 
-             border-top: 100px solid white; 
-             border-right: 100px solid transparent; 
-            }
-         }
+        // background-color: $lightgreen;
 
         h1{
             font-family: Patua One;
             background-color: $darkgreen;
             color: $white;
             grid-area: section-7;
-            margin: 0px 0px 30px 0px;
+            margin: 0px 0px 0px 0px;
             padding: 30px 20px 30px 20px;
             text-align: center;
             font-size: 2.8rem;
@@ -35,6 +25,7 @@
         aside{
             background-image: url('../img/section-7/highlightvid.jpg');
             background-size: cover;
+            background-color: $lightgreen;
             background-repeat: no-repeat;
             background-position: center;
             height: 28vh;
@@ -58,6 +49,7 @@
             line-height: 2rem;
             margin: 30px 30px 50px 30px;
             text-align: justify;
+            position: absolute;
 
             @include md{
                 text-align: center;
@@ -67,8 +59,32 @@
             @include lg{
                 margin: 30px 320px 50px 320px;
             }
+
+            
             }
         
+            #trapezoid{
+                background-image: url('../img/section-7/mobshape4.svg');
+                background-color: $lightgreen;
+                background-size: cover;
+                background-repeat: no-repeat;
+                // display: block;
+                background-position: 0px 0px;
+                height: 50vh; 
+                // width: 370px;
+            }
+
+            #trapezoid-2{
+                background-image: url('../img/section-7/mobshape5.svg');
+                background-color: transparent;
+                background-size: cover;
+                background-repeat: no-repeat;
+                // display: block;
+                background-position: 0px 0px;
+                height: 10vh; 
+                width: -170px;
+                margin-left: 131px;
+            }
     }
 }
            

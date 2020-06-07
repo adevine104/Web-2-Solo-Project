@@ -86,7 +86,7 @@
                 margin-bottom: 30px;
                 display: grid;
                 gap: 20px;
-                grid-template-columns: repeat(1,1fr);
+                grid-template-columns: repeat(1, 1fr);
                 grid-template-areas: 
                     "c1"
                     "c2"
@@ -96,12 +96,9 @@
                 grid-template-rows: repeat(5, 1fr);
 
                 @include md {
-                    #number1-container{
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center
-                    // align-items: stretch;
-                    }
+                    justify-content: center;
                 }
             }
 
@@ -110,6 +107,7 @@
                 background-color: $tangerine;
                 background-size: cover;
                 background-repeat: no-repeat;
+                display: block;
                 background-position: 0px 0px;
                 height: 70vh;
 
@@ -144,6 +142,12 @@
                     height: 40vh;
                     width: 900px;
                 }
+
+                @include xl{
+                    background-position: 260px -128px;
+                    height: 50vh;
+                    width: 1000px;
+                }
             }
 
             .number{
@@ -152,17 +156,29 @@
                 width: 40px;
                 height: 40px;
                 text-align: center;
+
+                @include md{
+                    margin-left: 40px;
+                }
             }
 
             a{
                 margin-left: 40px;
+
+                @include md{
+                    margin-left: 0px;
+                    margin-right: 20px;
+                }
             }
 
             #number-1-container{
-                grid-area: c1;
-                grid-template-columns: repeat(2,1fr);
+                grid-area: c1; 
+
+                @include sm{
+                grid-template-columns: repeat(1,2fr);
                 grid-template-rows: repeat(1,1fr);
-                grid-template-areas: "n1 w2";
+                grid-template-areas: "n1 w1";
+                }
 
                 #number-1 {
                     grid-area: n1;
@@ -175,6 +191,12 @@
 
             #number-2-container{
                 grid-area: c2;
+
+                @include sm{
+                    grid-template-columns: repeat(1,2fr);
+                    grid-template-rows: repeat(1,1fr);
+                    grid-template-areas: "n2 w2";
+                    }
 
                 #number-2 {
                     grid-area: n2;
