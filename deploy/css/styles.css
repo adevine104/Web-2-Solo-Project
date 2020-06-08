@@ -459,25 +459,20 @@ header {
         grid-template-columns: auto 20%; } }
     header > div #search-container {
       grid-area: logo;
-      padding: 20px;
-      margin-top: 12px;
-      text-align: right;
-      font-family: Taviraj;
-      font-weight: 500; }
-      header > div #search-container a:link,
-      header > div #search-container a:visited {
-        background-color: #fff;
-        border-radius: 23px;
-        color: #5340BD;
-        font-size: 1.125rem;
-        font-weight: 700;
-        padding: 10px 25px;
-        text-decoration: none;
-        transition: 0.25s; }
-      header > div #search-container a:hover,
-      header > div #search-container a:active {
-        background-color: #DCAC03;
-        color: #fff; }
+      margin-top: 16px;
+      background-image: url("../img/header/searchform.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
+      height: 33px;
+      width: 160px;
+      margin-left: 43%; }
+      @media (min-width: 768px) {
+        header > div #search-container {
+          margin-left: 70%; } }
+      @media (min-width: 992px) {
+        header > div #search-container {
+          margin-left: 40%; } }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -524,26 +519,62 @@ footer {
   color: black;
   text-align: center;
   padding: 0px 0px 50px 0px; }
+  @media (min-width: 768px) {
+    footer {
+      display: grid;
+      grid-template-areas: ". footer .";
+      grid-template-columns: auto 770px auto; } }
+  @media (min-width: 992px) {
+    footer {
+      grid-template-columns: auto 1000px auto; } }
+  @media (min-width: 992px) {
+    footer {
+      grid-template-columns: auto 1440px auto; } }
   footer #footer-content {
     grid-area: footer; }
+    @media (min-width: 768px) {
+      footer #footer-content {
+        display: grid;
+        grid-template-areas: "band band" "header icons";
+        grid-template-columns: 50% auto;
+        grid-template-rows: repeat(2/1fr); } }
     footer #footer-content > div {
+      grid-area: band;
       background-color: #8282EE;
       height: 10vh;
       width: 100%; }
     footer #footer-content h3 {
+      grid-area: header;
       margin: 20px 10px 20px 10px;
       font-size: 1.25rem;
       font-family: Taviraj;
       font-weight: 300; }
+      @media (min-width: 768px) {
+        footer #footer-content h3 {
+          text-align: left;
+          margin: 10px 10px 20px 10px;
+          font-size: 1.2rem; } }
+      @media (min-width: 992px) {
+        footer #footer-content h3 {
+          font-size: 1.4rem;
+          margin: 20px 10px 20px 40px; } }
     footer #footer-content h4 {
       margin: 5px 10px 20px 10px;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-family: Taviraj;
       font-weight: 300; }
     footer #footer-content ul {
+      grid-area: icons;
       display: flex;
       justify-content: center;
       font-size: 1rem; }
+      @media (min-width: 768px) {
+        footer #footer-content ul {
+          justify-content: flex-end; } }
+      @media (min-width: 992px) {
+        footer #footer-content ul {
+          font-size: 1.4rem;
+          margin: 10px 10px 20px 40px; } }
       footer #footer-content ul li {
         margin: 10px 10px; }
         footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
@@ -688,7 +719,32 @@ footer {
   grid-template-columns: 0px auto 0px; }
   #section-3 #section-3-desktop {
     grid-area: section-3; }
+    @media (min-width: 992px) {
+      #section-3 #section-3-desktop .container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      #section-3 #section-3-desktop .container .section-3-image {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2; }
+      #section-3 #section-3-desktop .container .section-3-header {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1; } }
     #section-3 #section-3-desktop aside {
+      grid-area: image;
       background-image: url("../img/section-3/blueface.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -703,6 +759,7 @@ footer {
           height: 60vh;
           background-position: 0px 0px; } }
     #section-3 #section-3-desktop #section-3-header {
+      grid-area: header;
       font-family: Patua One;
       font-size: 1.4rem;
       background-color: #FF703B;
@@ -714,6 +771,15 @@ footer {
       @media (min-width: 768px) {
         #section-3 #section-3-desktop #section-3-header {
           padding: 30px 35px 30px 35px; } }
+      @media (min-width: 992px) {
+        #section-3 #section-3-desktop #section-3-header {
+          background-color: transparent;
+          background-image: url("../img/section-3/deskheader.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 10vh;
+          padding-top: 100px; } }
     #section-3 #section-3-desktop #section-3-list {
       font-family: Patua One;
       background-color: transparent;
@@ -726,7 +792,7 @@ footer {
       margin-bottom: 30px;
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 2fr);
       grid-template-areas: "c1" "c2" "c3" "c4" "c5";
       grid-template-rows: repeat(5, 1fr); }
       #section-3 #section-3-desktop #section-3-list a:link,
@@ -744,6 +810,14 @@ footer {
           display: flex;
           flex-wrap: wrap;
           justify-content: center; } }
+      @media (min-width: 992px) {
+        #section-3 #section-3-desktop #section-3-list {
+          font-size: 2.2rem;
+          margin: 100px 140px 200px 140px; } }
+      @media (min-width: 1200px) {
+        #section-3 #section-3-desktop #section-3-list {
+          font-size: 2.2rem;
+          margin: 100px 300px 200px 300px; } }
     #section-3 #section-3-desktop #triangle {
       background-image: url("../img/section-3/mobshape1.svg");
       background-color: #FFAA8B;
@@ -775,14 +849,16 @@ footer {
           width: 610px; } }
       @media (min-width: 992px) {
         #section-3 #section-3-desktop #triangle-2 {
-          background-position: 260px -121px;
-          height: 40vh;
+          background-position: 53px -243px;
+          height: 50vh;
           width: 900px; } }
       @media (min-width: 1200px) {
         #section-3 #section-3-desktop #triangle-2 {
-          background-position: 260px -128px;
+          background-position: 200px -235px;
           height: 50vh;
-          width: 1000px; } }
+          width: 1050px; } }
+    #section-3 #section-3-desktop .list-container {
+      margin-right: 100px; }
     #section-3 #section-3-desktop .number {
       background-color: white;
       color: #FF8457;
@@ -792,6 +868,9 @@ footer {
       @media (min-width: 768px) {
         #section-3 #section-3-desktop .number {
           margin-left: 40px; } }
+    @media (min-width: 768px) {
+      #section-3 #section-3-desktop .word {
+        margin-bottom: 100px; } }
     #section-3 #section-3-desktop a {
       margin-left: 40px; }
       @media (min-width: 768px) {
@@ -825,7 +904,8 @@ footer {
       #section-3 #section-3-desktop #number-3-container #number-3 {
         grid-area: n3; }
       #section-3 #section-3-desktop #number-3-container #word-3 {
-        grid-area: w3; }
+        grid-area: w3;
+        margin-right: 20px; }
     #section-3 #section-3-desktop #number-4-container {
       grid-area: c4; }
       #section-3 #section-3-desktop #number-4-container #number-4 {
@@ -852,7 +932,7 @@ footer {
       font-family: Patua One;
       color: #5340BD;
       grid-area: section-4;
-      margin: 50px 20px 40px 20px;
+      margin: 20px 20px 40px 20px;
       text-align: left;
       font-size: 1.6rem;
       padding-right: 20px; }
@@ -889,11 +969,11 @@ footer {
         grid-area: section-4;
         line-height: 2rem;
         text-align: justify;
-        margin: 20px 30px 20px 30px; }
+        margin: 20px 30px 40px 30px; }
         @media (min-width: 768px) {
           #section-4 #section-4-desktop #section-4-container #section-4-content p {
             text-align: center;
-            margin: 20px 150px 40px 150px;
+            margin: 20px 150px 50px 150px;
             font-size: 1.7; } }
         @media (min-width: 992px) {
           #section-4 #section-4-desktop #section-4-container #section-4-content p {
@@ -919,10 +999,26 @@ footer {
       padding: 40px 0px 40px 0px;
       text-align: center;
       font-size: 1.6rem; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-content #section-5-header {
+          background-color: transparent;
+          background-image: url("../img/section-5/tabheader.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: -162px 0px;
+          height: 5vh;
+          padding-top: 50px; } }
+      @media (min-width: 992px) {
+        #section-5 #section-5-content #section-5-header {
+          background-color: transparent;
+          background-image: url("../img/section-5/deskheader.svg");
+          background-position: center;
+          height: 10vh;
+          padding-top: 100px; } }
     @media (min-width: 768px) {
       #section-5 #section-5-content #section-5-container {
         display: grid;
-        grid-template-columns: 56% auto;
+        grid-template-columns: 60% auto;
         grid-template-areas: "video clock"; } }
     @media (min-width: 992px) {
       #section-5 #section-5-content #section-5-container {
@@ -931,9 +1027,6 @@ footer {
         grid-template-areas: "clock video"; } }
     #section-5 #section-5-content #section-5-container #section-5-countdown {
       grid-area: clock;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       font-family: Taviraj;
       font-weight: 700;
       color: white;
@@ -951,6 +1044,9 @@ footer {
         text-align: center;
         font-size: 2rem;
         padding: 10px 10px 0px 10px; }
+        @media (min-width: 992px) {
+          #section-5 #section-5-content #section-5-container #section-5-countdown h4 {
+            font-size: 2.2rem; } }
       #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-numbers {
         width: 100%;
         list-style: none;
@@ -961,33 +1057,47 @@ footer {
         color: #6FC1BB;
         border-radius: 100%;
         height: 58px;
-        padding-top: 33px;
-        margin: 10px 10px 0px 10px;
+        padding: 33px 30px 0px 30px;
+        margin: 10px 0px 0px 0px;
         font-size: 1.6rem; }
         @media (min-width: 768px) {
           #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-numbers {
             height: 50px;
-            padding-top: 25px; } }
+            padding: 25px 29px 0px 21px; } }
         @media (min-width: 992px) {
           #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-numbers {
-            height: 55px;
+            height: 57px;
             width: 10vh;
-            padding-top: 28px;
-            margin-left: 240px;
+            padding: 28px 10px 0px 10px;
+            margin-left: 250px;
             display: block;
-            text-align: center; } }
+            text-align: center;
+            font-size: 1.8rem; } }
+        @media (min-width: 1200px) {
+          #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-numbers {
+            padding: 30px 10px 0px 10px;
+            height: 65px;
+            margin-left: 240px; } }
       #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-words {
         width: 100%;
         list-style: none;
         display: inline-block;
         text-align: center;
-        margin: 10px 10px 0px 10px;
-        font-size: 1.4rem; }
+        margin: 10px 0px 0px 0px;
+        font-size: 1.2rem; }
         @media (min-width: 992px) {
           #section-5 #section-5-content #section-5-container #section-5-countdown .c-5-words {
             display: block;
             text-align: center;
-            margin-left: 220px; } }
+            font-size: 1.8rem; } }
+      #section-5 #section-5-content #section-5-container #section-5-countdown ul {
+        display: grid;
+        grid-template-areas: "c-g-1 c-g-2 c-g-3";
+        grid-template-columns: repeat(3/33%); }
+        @media (min-width: 992px) {
+          #section-5 #section-5-content #section-5-container #section-5-countdown ul {
+            display: grid;
+            grid-template-areas: "c-g-1"  "c-g-2"  "c-g-3"; } }
     #section-5 #section-5-content #section-5-container #c-group-1 {
       grid-area: c-g-1; }
     #section-5 #section-5-content #section-5-container #c-group-2 {
@@ -1020,11 +1130,9 @@ footer {
           font-size: 1.5rem; } }
       @media (min-width: 992px) {
         #section-5 #section-5-content h6 {
-          position: relative;
-          text-align: right;
-          margin: 20px 20px 20px 1000px;
-          padding: 0px 0px 0px 20px;
-          font-size: 1.5rem; } }
+          display: flex;
+          justify-content: flex-end;
+          margin: 0px 20px 80px 0px; } }
     #section-5 #section-5-content #section-5-oval {
       background-image: url("../img/section-5/mobshape3-2.svg");
       background-color: transparent;
@@ -1037,15 +1145,16 @@ footer {
           background-image: url("../img/section-5/tabshape3.svg");
           background-color: white;
           background-position: center;
-          height: 23vh;
-          width: 770px; } }
+          height: 13vh; } }
       @media (min-width: 992px) {
         #section-5 #section-5-content #section-5-oval {
-          background-image: url("../img/section-5/tabshape3.svg");
-          background-color: white;
-          background-position: -50px 0;
+          background-position: center;
           height: 30vh;
-          width: 1440px; } }
+          width: 100%; } }
+      @media (min-width: 1200px) {
+        #section-5 #section-5-content #section-5-oval {
+          background-position: center;
+          height: 35vh; } }
 /* =============
     Section 6
 ============= */
@@ -1106,7 +1215,10 @@ footer {
             #section-6 #section-6-container ul li #pic {
               height: 280px; } }
         #section-6 #section-6-container ul li #text {
-          margin-top: 20px; }
+          margin: 10px 8px 0px 8px; }
+          @media (min-width: 768px) {
+            #section-6 #section-6-container ul li #text {
+              margin: 20px 25px 20px 25px; } }
       #section-6 #section-6-container ul #g1 {
         grid-area: g1; }
         #section-6 #section-6-container ul #g1 #pic {
@@ -1152,7 +1264,10 @@ footer {
   grid-template-columns: 0px auto 0px; }
   #section-7 #section-7-content {
     grid-area: section-7; }
-    #section-7 #section-7-content h1 {
+    @media (min-width: 768px) {
+      #section-7 #section-7-content {
+        background-color: #9BBF4A; } }
+    #section-7 #section-7-content #section-7-header {
       font-family: Patua One;
       background-color: #8BB62B;
       color: #fff;
@@ -1160,21 +1275,35 @@ footer {
       margin: 0px 0px 0px 0px;
       padding: 30px 20px 30px 20px;
       text-align: center;
-      font-size: 2.8rem; }
+      font-size: 1.6rem; }
+      @media (min-width: 768px) {
+        #section-7 #section-7-content #section-7-header {
+          background-color: transparent;
+          background-image: url("../img/section-7/tabheader7-1.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 2px 0px;
+          height: 5vh;
+          padding-top: 50px; } }
+      @media (min-width: 992px) {
+        #section-7 #section-7-content #section-7-header {
+          background-color: transparent;
+          background-image: url("../img/section-7/deskheader.svg");
+          background-position: center;
+          height: 10vh;
+          padding-top: 100px; } }
     #section-7 #section-7-content aside {
-      background-image: url("../img/section-7/highlightvid.jpg");
       background-size: cover;
-      background-color: #B9D776;
       background-repeat: no-repeat;
       background-position: center;
       height: 28vh; }
       @media (min-width: 768px) {
         #section-7 #section-7-content aside {
-          margin: 20px 80px 10px 80px;
+          margin: 40px 80px 10px 80px;
           height: 34vh; } }
       @media (min-width: 992px) {
         #section-7 #section-7-content aside {
-          margin: 20px 180px 10px 180px;
+          margin: 40px 180px 10px 180px;
           height: 70vh; } }
     #section-7 #section-7-content p {
       font-family: Taviraj;
@@ -1182,16 +1311,19 @@ footer {
       font-size: 1.5rem;
       grid-area: section-7;
       line-height: 2rem;
-      margin: 30px 30px 50px 30px;
+      margin: 50px 30px 50px 30px;
       text-align: justify;
       position: absolute; }
       @media (min-width: 768px) {
         #section-7 #section-7-content p {
           text-align: center;
-          margin: 30px 138px 50px 138px; } }
+          margin: 40px 138px 50px 138px; } }
       @media (min-width: 992px) {
         #section-7 #section-7-content p {
-          margin: 30px 320px 50px 320px; } }
+          margin: 30px 220px 50px 220px; } }
+      @media (min-width: 1200px) {
+        #section-7 #section-7-content p {
+          margin: 130px 320px 50px 320px; } }
     #section-7 #section-7-content #trapezoid {
       background-image: url("../img/section-7/mobshape4.svg");
       background-color: #B9D776;
@@ -1199,6 +1331,19 @@ footer {
       background-repeat: no-repeat;
       background-position: 0px 0px;
       height: 50vh; }
+      @media (min-width: 768px) {
+        #section-7 #section-7-content #trapezoid {
+          background-image: url("../img/section-7/tabshape7-11.svg");
+          background-position: center;
+          height: 20vh;
+          width: 100%;
+          background-color: #B9D776; } }
+      @media (min-width: 992px) {
+        #section-7 #section-7-content #trapezoid {
+          height: 40vh; } }
+      @media (min-width: 1200px) {
+        #section-7 #section-7-content #trapezoid {
+          height: 45vh; } }
     #section-7 #section-7-content #trapezoid-2 {
       background-image: url("../img/section-7/mobshape5.svg");
       background-color: transparent;
@@ -1208,7 +1353,17 @@ footer {
       height: 10vh;
       width: -170px;
       margin-left: 131px; }
-
+      @media (min-width: 768px) {
+        #section-7 #section-7-content #trapezoid-2 {
+          background-image: url("../img/section-7/tabshape7-2.svg");
+          background-position: center;
+          height: 9.5vh;
+          width: 100%;
+          margin-left: 0px; } }
+      @media (min-width: 992px) {
+        #section-7 #section-7-content #trapezoid-2 {
+          background-position: center;
+          height: 22vh; } }
 /* =============
     Section 8
 ============= */
@@ -1222,9 +1377,9 @@ footer {
       font-family: Patua One;
       color: #DCAC03;
       grid-area: section-8;
-      margin: 40px 20px 20px 20px;
+      margin: 80px 20px 40px 20px;
       text-align: center;
-      font-size: 2.8rem; }
+      font-size: 3rem; }
     #section-8 #section-8-content aside {
       background-image: url("../img/section-8/parade2.jpg");
       background-size: cover;

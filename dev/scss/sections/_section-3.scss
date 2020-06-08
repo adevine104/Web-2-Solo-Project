@@ -10,17 +10,39 @@
     #section-3-desktop {
          grid-area: section-3;
 
-        //  #tab{
-        //     background-image: url('../img/section-3/tabpiccorner1.svg');
-        //     border: 3px solid red;
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     background-position: 0px 0px;
-        //     height: 70vh;
-        //     width: 380px;
-        //  }
+            @include lg {
+                .container {
+                  display: -webkit-box;
+                  display: -moz-box;
+                  display: -ms-flexbox;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -moz-box-orient: vertical;
+                  -webkit-flex-direction: column;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                }
+              
+                .container .section-3-image {
+                  -webkit-box-ordinal-group: 2;
+                  -moz-box-ordinal-group: 2;
+                  -ms-flex-order: 2;
+                  -webkit-order: 2;
+                  order: 2;
+                }
+              
+                .container .section-3-header {
+                  -webkit-box-ordinal-group: 1;
+                  -moz-box-ordinal-group: 1;
+                  -ms-flex-order: 1;
+                  -webkit-order: 1;
+                  order: 1;
+                }
+        }
 
          aside{
+             grid-area: image;
             background-image: url('../img/section-3/blueface.jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -36,10 +58,10 @@
                 height: 60vh;
                 background-position: 0px 0px;
             }
-
          }
 
             #section-3-header {
+                grid-area: header;
                 font-family: Patua One;
                 font-size: 1.4rem;
                 background-color: $boldorange;
@@ -54,11 +76,16 @@
                 }
 
                 @include lg{
-                    
+                    background-color: transparent;
+                    background-image: url('../img/section-3/deskheader.svg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 10vh;
+                    padding-top: 100px;
                 }
             }
-
-
+        
             #section-3-list {
                 font-family: Patua One;
                 background-color: transparent;
@@ -86,7 +113,7 @@
                 margin-bottom: 30px;
                 display: grid;
                 gap: 20px;
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: repeat(1, 2fr);
                 grid-template-areas: 
                     "c1"
                     "c2"
@@ -99,6 +126,16 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
+                }
+
+                @include lg {
+                    font-size: 2.2rem;
+                    margin: 100px 140px 200px 140px;
+                }
+
+                @include xl {
+                    font-size: 2.2rem;
+                    margin: 100px 300px 200px 300px;
                 }
             }
 
@@ -138,16 +175,20 @@
                 }
 
                 @include lg{
-                    background-position: 260px -121px;
-                    height: 40vh;
+                    background-position: 53px -243px;
+                    height: 50vh;
                     width: 900px;
                 }
 
                 @include xl{
-                    background-position: 260px -128px;
+                    background-position: 200px -235px;
                     height: 50vh;
-                    width: 1000px;
+                    width: 1050px;
                 }
+            }
+
+            .list-container{
+                margin-right: 100px;
             }
 
             .number{
@@ -162,6 +203,12 @@
                 }
             }
 
+            .word{
+
+                @include md{
+                margin-bottom: 100px;
+                }
+            }
             a{
                 margin-left: 40px;
 
@@ -196,7 +243,7 @@
                     grid-template-columns: repeat(1,2fr);
                     grid-template-rows: repeat(1,1fr);
                     grid-template-areas: "n2 w2";
-                    }
+                }
 
                 #number-2 {
                     grid-area: n2;
@@ -216,6 +263,7 @@
 
                 #word-3 {
                     grid-area: w3;
+                    margin-right: 20px;
                 }
             }
 
@@ -243,46 +291,6 @@
                     grid-area: w5;
                 }
             }
-            // ul{
-            //     display: grid;
-            //     grid-area: section-3;
-            //     grid-template-columns: repeat(2, 20%);
-            //     grid-template-rows: repeat(5, 2fr);
-            // }
-
-            // ol {
-            //     list-style: none;
-            //     counter-reset: item;
-            
-
-            //     @include md{
-            //         display: flex;
-            //         flex-wrap: wrap;
-            //         justify-content: center;
-            //         padding: 20px 0px 20px 0px;
-            //         // line-height: 2rem;
-            //         // list-style-position:inside;
-            //         // text-align:  center;
-            //         }
-                    
-            // }
-            // }
-
-            //   li {
-            //     counter-increment: item;
-            //     margin-bottom: 30px;
-            //   }
-            //   li:before {
-            //     padding-top: 8px;
-            //     margin-right: 0px;
-            //     content: counter(item);
-            //     background: $white;
-            //     color: $lightorange;
-            //     width: 1.8em;
-            //     height: 1.5em;
-            //     text-align: center;
-            //     display: inline-block;
-            //   }
 
         }
 

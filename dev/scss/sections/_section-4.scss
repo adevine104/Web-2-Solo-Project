@@ -14,7 +14,7 @@
             font-family: Patua One;
             color: $purple;
             grid-area: section-4;
-            margin: 50px 20px 40px 20px;
+            margin: 20px 20px 40px 20px;
             text-align: left;
             font-size: 1.6rem;
             padding-right: 20px;
@@ -63,11 +63,11 @@
                 grid-area: section-4;
                 line-height: 2rem;
                 text-align: justify;  
-                margin: 20px 30px 20px 30px;
+                margin: 20px 30px 40px 30px;
 
                 @include md{
                     text-align: center;
-                    margin: 20px 150px 40px 150px;
+                    margin: 20px 150px 50px 150px;
                     font-size: 1.7;
                 }
 

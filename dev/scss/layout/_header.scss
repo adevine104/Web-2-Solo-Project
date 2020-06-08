@@ -10,6 +10,7 @@ header {
     width: 100%;
     color: $purple;
 
+    
     >div {
         display: grid;
         grid-template-areas: "burger logo"
@@ -23,28 +24,22 @@ header {
 
         #search-container {
             grid-area: logo;
-            padding: 20px;
-            margin-top: 12px;
-            text-align: right;
-            font-family: Taviraj;
-            font-weight: 500;
+            // padding: 20px;
+            margin-top: 16px;
+            background-image: url('../img/header/searchform.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+            height: 33px;
+            width: 160px;
+            margin-left: 43%;
 
-            a:link,
-            a:visited {
-                background-color: $white;
-                border-radius: 23px;
-                color: $purple;
-                font-size: rem-calc(18);
-                font-weight: 700;
-                padding: 10px 25px;
-                text-decoration: none;
-                transition: 0.25s;
+            @include md{
+                margin-left: 70%;
             }
 
-            a:hover,
-            a:active {
-                background-color: $gold;
-                color: $white;
+            @include lg{
+                margin-left: 40%;
             }
         }
 

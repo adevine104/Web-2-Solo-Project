@@ -11,7 +11,11 @@
         grid-area: section-7;
         // background-color: $lightgreen;
 
-        h1{
+        @include md{
+            background-color: $midgreen;
+        }
+
+        #section-7-header{
             font-family: Patua One;
             background-color: $darkgreen;
             color: $white;
@@ -19,24 +23,40 @@
             margin: 0px 0px 0px 0px;
             padding: 30px 20px 30px 20px;
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 1.6rem;
+            
+            @include md{
+                background-color: transparent;
+                background-image: url('../img/section-7/tabheader7-1.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 2px 0px;
+                height: 5vh;
+                padding-top: 50px;
             }
+
+            @include lg{
+                background-color: transparent;
+                background-image: url('../img/section-7/deskheader.svg');
+                background-position: center;
+                height: 10vh;
+                padding-top: 100px;
+            }
+        }
         
         aside{
-            background-image: url('../img/section-7/highlightvid.jpg');
             background-size: cover;
-            background-color: $lightgreen;
             background-repeat: no-repeat;
             background-position: center;
             height: 28vh;
 
             @include md{
-                margin: 20px 80px 10px 80px;
+                margin: 40px 80px 10px 80px;
                 height: 34vh;
             }
 
             @include lg{
-                margin: 20px 180px 10px 180px;
+                margin: 40px 180px 10px 180px;
                 height: 70vh;
             }
             }
@@ -47,17 +67,21 @@
             font-size: 1.5rem;
             grid-area: section-7;
             line-height: 2rem;
-            margin: 30px 30px 50px 30px;
+            margin: 50px 30px 50px 30px;
             text-align: justify;
             position: absolute;
 
             @include md{
                 text-align: center;
-                margin: 30px 138px 50px 138px;
+                margin: 40px 138px 50px 138px;
             }
 
             @include lg{
-                margin: 30px 320px 50px 320px;
+                margin: 30px 220px 50px 220px;
+            }
+
+            @include xl{
+                margin: 130px 320px 50px 320px;
             }
 
             
@@ -68,10 +92,24 @@
                 background-color: $lightgreen;
                 background-size: cover;
                 background-repeat: no-repeat;
-                // display: block;
                 background-position: 0px 0px;
                 height: 50vh; 
-                // width: 370px;
+
+                @include md{
+                    background-image: url('../img/section-7/tabshape7-11.svg');
+                    background-position: center;
+                    height: 20vh;
+                    width: 100%;
+                    background-color: $lightgreen;
+                }
+
+                @include lg{
+                    height: 40vh;
+                }
+
+                @include xl{
+                    height: 45vh;
+                }
             }
 
             #trapezoid-2{
@@ -79,11 +117,23 @@
                 background-color: transparent;
                 background-size: cover;
                 background-repeat: no-repeat;
-                // display: block;
                 background-position: 0px 0px;
                 height: 10vh; 
                 width: -170px;
                 margin-left: 131px;
+
+                @include md{
+                    background-image: url('../img/section-7/tabshape7-2.svg');
+                    background-position: center;
+                    height: 9.5vh; 
+                    width: 100%;
+                    margin-left: 0px;
+                }
+
+                @include lg{
+                    background-position: center;
+                    height: 22vh;
+                }
             }
     }
 }

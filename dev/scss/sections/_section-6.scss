@@ -33,12 +33,10 @@
             grid-template-rows: repeat(2, 1fr);
 
             @include md {
-                // grid-template-columns: 50% auto;
                 grid-template-areas: 
                 "g1 g2 g3"
                 "g4 g5 g6";
                 grid-template-columns: repeat(3, 1fr);
-                // grid-template-rows: repeat(3, 277px);
             }
 
             @include lg {
@@ -46,7 +44,6 @@
                 "g1 g2 g3 g4"
                 "g5 g6 g7 g8";
                 grid-template-columns: repeat(4, 1fr);
-                // grid-template-rows: repeat(3, 250px);
             }
 
             li {
@@ -85,7 +82,11 @@
                 }
 
                 #text{
-                    margin-top: 20px;
+                    margin: 10px 8px 0px 8px;
+
+                    @include md{
+                    margin: 20px 25px 20px 25px;
+                    }
                 }
             }
 
@@ -157,4 +158,3 @@
         }
     }
 }
-// }
