@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="321px" viewBox="0 0 768 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-118.000000, -1217.000000)">
+            <g id="Group-5" transform="translate(118.000000, 1217.000000)">
+                <rect id="Rectangle" fill="#B9D776" x="0" y="0" width="768" height="209"></rect>
+                <polygon id="Path-18" fill="#9BBF4A" points="768 0 699.42259 209.4688 58.5346831 209.4688 0 2.76161538e-13"></polygon>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="209" width="768" height="112"></rect>
+                <polygon id="Path-19" fill="#B9D776" points="59 209 699 209 667.224054 307 90.8186143 307"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

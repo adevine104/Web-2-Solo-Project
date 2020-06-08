@@ -73,7 +73,7 @@
 
             @include md{
                 text-align: center;
-                margin: 40px 138px 50px 138px;
+                margin: 30px 138px 50px 138px;
             }
 
             @include lg{
@@ -88,51 +88,25 @@
             }
         
             #trapezoid{
-                background-image: url('../img/section-7/mobshape4.svg');
+                background-image: url('../img/section-7/mobshape7green.svg');
                 background-color: $lightgreen;
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: 0px 0px;
+                background-position: center;
                 height: 50vh; 
 
                 @include md{
-                    background-image: url('../img/section-7/tabshape7-11.svg');
-                    background-position: center;
-                    height: 20vh;
-                    width: 100%;
+                    background-image: url('../img/section-7/tabshape7green.svg');
+                    height: 32vh;
                     background-color: $lightgreen;
                 }
 
                 @include lg{
-                    height: 40vh;
+                    height: 65vh;
                 }
 
                 @include xl{
-                    height: 45vh;
-                }
-            }
-
-            #trapezoid-2{
-                background-image: url('../img/section-7/mobshape5.svg');
-                background-color: transparent;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: 0px 0px;
-                height: 10vh; 
-                width: -170px;
-                margin-left: 131px;
-
-                @include md{
-                    background-image: url('../img/section-7/tabshape7-2.svg');
-                    background-position: center;
-                    height: 9.5vh; 
-                    width: 100%;
-                    margin-left: 0px;
-                }
-
-                @include lg{
-                    background-position: center;
-                    height: 22vh;
+                    height: 70vh;
                 }
             }
     }

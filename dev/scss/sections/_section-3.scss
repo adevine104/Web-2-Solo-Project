@@ -140,51 +140,22 @@
             }
 
             #triangle{
-                background-image: url('../img/section-3/mobshape1.svg');
+                background-image: url('../img/section-3/mobshape3orange.svg');
                 background-color: $tangerine;
                 background-size: cover;
                 background-repeat: no-repeat;
                 display: block;
-                background-position: 0px 0px;
-                height: 70vh;
+                background-position: center;
+                height: 90vh;
 
                 @include md{
-                    background-image: url('../img/section-3/deskshape1.svg');
-                    background-position: center;
-                    height: 40vh;
-                } 
-
-                @include lg{
+                    background-image: url('../img/section-3/tabshape3orange.svg');
                     height: 60vh;
                 } 
-            }
-                
-            #triangle-2{
-                background-image: url('../img/section-3/mobshape2.svg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: -10px 0px;
-                height: 20vh;
-                width: 170px;
-
-                @include md{
-                    background-image: url('../img/section-3/deskshape2.svg');
-                    background-position: 80px -106px;
-                    height: 25vh;
-                    width: 610px;
-                }
 
                 @include lg{
-                    background-position: 53px -243px;
-                    height: 50vh;
-                    width: 900px;
-                }
-
-                @include xl{
-                    background-position: 200px -235px;
-                    height: 50vh;
-                    width: 1050px;
-                }
+                    height: 120vh;
+                } 
             }
 
             .list-container{

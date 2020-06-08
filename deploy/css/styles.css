@@ -445,10 +445,11 @@ textarea {
 header {
   background-color: #fff;
   left: 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  color: #5340BD; }
+  color: #5340BD;
+  z-index: 1000; }
   header > div {
     display: grid;
     grid-template-areas: "burger logo" "nav nav";
@@ -606,7 +607,7 @@ footer {
     font-family: Patua One;
     text-align: center;
     color: white;
-    margin: 50px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     padding: 40px 0px 30px 0px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.702118) 23%, rgba(0, 0, 0, 0.371586) 85%, rgba(255, 255, 255, 0) 99%); }
     @media (min-width: 768px) {
@@ -819,44 +820,20 @@ footer {
           font-size: 2.2rem;
           margin: 100px 250px 200px 250px; } }
     #section-3 #section-3-desktop #triangle {
-      background-image: url("../img/section-3/mobshape1.svg");
+      background-image: url("../img/section-3/mobshape3orange.svg");
       background-color: #FFAA8B;
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
-      background-position: 0px 0px;
-      height: 70vh; }
+      background-position: center;
+      height: 90vh; }
       @media (min-width: 768px) {
         #section-3 #section-3-desktop #triangle {
-          background-image: url("../img/section-3/deskshape1.svg");
-          background-position: center;
-          height: 40vh; } }
-      @media (min-width: 992px) {
-        #section-3 #section-3-desktop #triangle {
+          background-image: url("../img/section-3/tabshape3orange.svg");
           height: 60vh; } }
-    #section-3 #section-3-desktop #triangle-2 {
-      background-image: url("../img/section-3/mobshape2.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: -10px 0px;
-      height: 20vh;
-      width: 170px; }
-      @media (min-width: 768px) {
-        #section-3 #section-3-desktop #triangle-2 {
-          background-image: url("../img/section-3/deskshape2.svg");
-          background-position: 80px -106px;
-          height: 25vh;
-          width: 610px; } }
       @media (min-width: 992px) {
-        #section-3 #section-3-desktop #triangle-2 {
-          background-position: 53px -243px;
-          height: 50vh;
-          width: 900px; } }
-      @media (min-width: 1200px) {
-        #section-3 #section-3-desktop #triangle-2 {
-          background-position: 200px -235px;
-          height: 50vh;
-          width: 1050px; } }
+        #section-3 #section-3-desktop #triangle {
+          height: 120vh; } }
     #section-3 #section-3-desktop .list-container {
       margin-right: 100px; }
     #section-3 #section-3-desktop .number {
@@ -1069,7 +1046,7 @@ footer {
             height: 57px;
             width: 10vh;
             padding: 28px 10px 0px 10px;
-            margin-left: 250px;
+            margin-left: 180px;
             display: block;
             text-align: center;
             font-size: 1.8rem; } }
@@ -1148,6 +1125,7 @@ footer {
           height: 13vh; } }
       @media (min-width: 992px) {
         #section-5 #section-5-content #section-5-oval {
+          background-image: url("../img/section-5/deskshape5blue.svg");
           background-position: center;
           height: 30vh;
           width: 100%; } }
@@ -1317,7 +1295,7 @@ footer {
       @media (min-width: 768px) {
         #section-7 #section-7-content p {
           text-align: center;
-          margin: 40px 138px 50px 138px; } }
+          margin: 30px 138px 50px 138px; } }
       @media (min-width: 992px) {
         #section-7 #section-7-content p {
           margin: 30px 220px 50px 220px; } }
@@ -1325,45 +1303,23 @@ footer {
         #section-7 #section-7-content p {
           margin: 130px 320px 50px 320px; } }
     #section-7 #section-7-content #trapezoid {
-      background-image: url("../img/section-7/mobshape4.svg");
+      background-image: url("../img/section-7/mobshape7green.svg");
       background-color: #B9D776;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: 0px 0px;
+      background-position: center;
       height: 50vh; }
       @media (min-width: 768px) {
         #section-7 #section-7-content #trapezoid {
-          background-image: url("../img/section-7/tabshape7-11.svg");
-          background-position: center;
-          height: 20vh;
-          width: 100%;
+          background-image: url("../img/section-7/tabshape7green.svg");
+          height: 32vh;
           background-color: #B9D776; } }
       @media (min-width: 992px) {
         #section-7 #section-7-content #trapezoid {
-          height: 40vh; } }
+          height: 65vh; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-content #trapezoid {
-          height: 45vh; } }
-    #section-7 #section-7-content #trapezoid-2 {
-      background-image: url("../img/section-7/mobshape5.svg");
-      background-color: transparent;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0px 0px;
-      height: 10vh;
-      width: -170px;
-      margin-left: 131px; }
-      @media (min-width: 768px) {
-        #section-7 #section-7-content #trapezoid-2 {
-          background-image: url("../img/section-7/tabshape7-2.svg");
-          background-position: center;
-          height: 9.5vh;
-          width: 100%;
-          margin-left: 0px; } }
-      @media (min-width: 992px) {
-        #section-7 #section-7-content #trapezoid-2 {
-          background-position: center;
-          height: 22vh; } }
+          height: 70vh; } }
 /* =============
     Section 8
 ============= */

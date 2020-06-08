@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="233px" viewBox="0 0 1024 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-54.000000, -4635.000000)">
+            <g id="Group-6" transform="translate(54.000000, 4635.916072)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="81.0839276" width="1024" height="150"></rect>
+                <polygon id="Rectangle-Copy-2" fill="#6FC1BB" points="0 0.0839276337 982.087545 0.0839276337 1024 0.0839276337 1024 81.0839276 0 81.0839276"></polygon>
+                <path d="M89,81.0839276 L936,81.0839276 C810.779627,164.417261 669.780816,206.083928 513.003567,206.083928 C356.226318,206.083928 214.891795,164.417261 89,81.0839276 Z" id="Path-16" fill="#6FC1BB"></path>
+                <path d="M89.7323784,81.5014213 C158.910793,81.5014213 440.760234,81.5014213 935.280703,81.5014213 C972.032459,53.4812267 1001.60556,26.4668396 1024,0.458259845 C1024,0.458259845 592.131628,-0.572824807 4.54747351e-13,0.458259845 C33.1172866,37.3902417 63.0280794,64.4046288 89.7323784,81.5014213 Z" id="Path-20" fill="#30A69D"></path>
+            </g>
+        </g>
+    </g>
+</svg>
