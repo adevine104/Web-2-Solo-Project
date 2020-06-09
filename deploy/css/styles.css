@@ -857,6 +857,12 @@ footer {
             display: grid;
             grid-template-areas: "one one two two three three" ". four four five five .";
             grid-template-columns: repeat(6, 1fr); } }
+        @media (min-width: 992px) {
+          #section-3 > div #numbers ul {
+            padding-top: 120px; } }
+        @media (min-width: 1200px) {
+          #section-3 > div #numbers ul {
+            padding-top: 150px; } }
         #section-3 > div #numbers ul li {
           align-items: center;
           display: flex;
@@ -865,6 +871,12 @@ footer {
             #section-3 > div #numbers ul li {
               display: block;
               text-align: center; } }
+          @media (min-width: 1200px) {
+            #section-3 > div #numbers ul li {
+              margin-bottom: 65px; } }
+          @media (min-width: 1200px) {
+            #section-3 > div #numbers ul li {
+              margin-bottom: 80px; } }
           #section-3 > div #numbers ul li .number {
             align-items: center;
             font-family: Patua One;
@@ -1035,7 +1047,7 @@ footer {
         margin-top: 30%; } }
     @media (min-width: 992px) {
       #section-5 #section-5-content #section-5-container #section-5-countdown {
-        margin-top: 100px; } }
+        margin-top: 15%; } }
     #section-5 #section-5-content #section-5-container #section-5-countdown h4 {
       display: inline-block;
       text-align: center;
@@ -1109,6 +1121,9 @@ footer {
     @media (min-width: 992px) {
       #section-5 #section-5-content #section-5-container #section-5-image {
         margin: 60px 0px 0px 0; } }
+    @media (min-width: 992px) {
+      #section-5 #section-5-content #section-5-container #section-5-image {
+        margin-top: 15%; } }
   #section-5 #section-5-content h6 {
     font-family: Taviraj;
     font-weight: 700;

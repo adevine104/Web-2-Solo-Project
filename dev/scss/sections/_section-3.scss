@@ -204,6 +204,14 @@
                     grid-template-columns: repeat(6, 1fr);
                 }
 
+                @include lg{
+                    padding-top: 120px;
+                }
+
+                @include xl{
+                    padding-top: 150px;
+                }
+
                 li {
                     align-items: center;
                     display: flex;
@@ -212,6 +220,14 @@
                     @include md {
                         display: block;
                         text-align: center;
+                    }
+
+                    @include xl{
+                        margin-bottom: 65px;
+                    }
+
+                    @include xl{
+                        margin-bottom: 80px;
                     }
 
                     .number {
