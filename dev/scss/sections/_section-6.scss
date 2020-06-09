@@ -10,54 +10,51 @@
         grid-template-columns: auto 1200px auto;
     }
 
-    #section-6-container{
+    #section-6-container {
         grid-area: section-6;
 
-        @include md{
+        @include md {
             margin-top: 20px;
         }
 
-        @include xl{
+        @include xl {
             margin-top: 45px;
         }
 
-        #section-6-header{
-            font-family: Patua One;
-            font-weight: 100;
-            text-align: center;
+        #section-6-header {
             color: $gold;
+            font-family: Patua One;
             font-size: 1.6rem;
+            font-weight: 100;
+            margin: 10px 0px 20px 0px;
             padding: 10px 0px 10px 0px;
-            margin: 10px 0px 20px 0px; 
+            text-align: center;
         }
-        
+
         ul {
-            margin-bottom: 30px;
             display: grid;
             gap: 20px;
-            grid-template-areas: 
-            "g1 g2"
-            "g3 g4";
+            grid-template-areas: "g1 g2"
+                "g3 g4";
             grid-template-rows: repeat(2, 1fr);
+            margin-bottom: 30px;
 
             @include md {
-                margin-bottom: 0px;
-                grid-template-areas: 
-                "g1 g2 g3"
-                "g4 g5 g6";
+                grid-template-areas: "g1 g2 g3"
+                    "g4 g5 g6";
                 grid-template-columns: repeat(3, 1fr);
+                margin-bottom: 0px;
             }
 
             @include lg {
-                grid-template-areas: 
-                "g1 g2 g3 g4"
-                "g5 g6 g7 g8";
+                grid-template-areas: "g1 g2 g3 g4"
+                    "g5 g6 g7 g8";
                 grid-template-columns: repeat(4, 1fr);
             }
 
             li {
-                font-size: 1.2rem;
                 font-family: Taviraj;
+                font-size: 1.2rem;
                 font-weight: 300;
                 text-align: center;
 
@@ -74,92 +71,97 @@
                     color: $lilac;
                 }
 
-                #pic{
+                #pic {
                     background-position: center;
                     background-size: cover;
                     border-radius: 100%;
                     height: 180px;
 
-                    @include md{
+                    @include md {
                         height: 240px;
                     }
 
-                    @include lg{
+                    @include lg {
                         height: 280px;
                     }
-
                 }
 
-                #text{
+                #text {
                     margin: 10px 8px 0px 8px;
 
-                    @include md{
-                    margin: 20px 25px 20px 25px;
+                    @include md {
+                        margin: 20px 25px 20px 25px;
                     }
                 }
             }
 
-
             #g1 {
                 grid-area: g1;
-                #pic{
+
+                #pic {
                     background-image: url("../img/section-6/pirates.jpg");
                 }
             }
 
             #g2 {
-                #pic{
-                background-image: url("../img/section-6/flowerman2.jpg");
-                }
                 grid-area: g2;
+
+                #pic {
+                    background-image: url("../img/section-6/flowerman2.jpg");
+                }
             }
 
             #g3 {
-                #pic{
-                background-image: url("../img/section-6/bigface.jpg");
-                }
                 grid-area: g3;
+
+                #pic {
+                    background-image: url("../img/section-6/bigface.jpg");
+                }
             }
 
             #g4 {
-                #pic{
-                background-image: url("../img/section-6/orangeman2.jpg");
-                }
                 grid-area: g4;
+
+                #pic {
+                    background-image: url("../img/section-6/orangeman2.jpg");
+                }
             }
 
-
             #g5 {
-                #pic{
-                background-image: url("../img/section-6/saxguy.jpg");
+                #pic {
+                    background-image: url("../img/section-6/saxguy.jpg");
                 }
+
                 @include md {
                     grid-area: g5;
                 }
             }
 
             #g6 {
-                #pic{
-                background-image: url("../img/section-6/singguy.jpg");
+                #pic {
+                    background-image: url("../img/section-6/singguy.jpg");
                 }
+
                 @include md {
                     grid-area: g6;
                 }
             }
 
             #g7 {
-                #pic{
-                background-image: url("../img/section-6/whitehat.jpg");
+                #pic {
+                    background-image: url("../img/section-6/whitehat.jpg");
                 }
+
                 @include lg {
                     grid-area: g7;
                 }
             }
 
             #g8 {
-                #pic{
-                background-image: url("../img/section-6/pinkbirdman.jpg");
+                #pic {
+                    background-image: url("../img/section-6/pinkbirdman.jpg");
                 }
+
                 @include lg {
                     grid-area: g8;
                 }

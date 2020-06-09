@@ -1,51 +1,47 @@
 /* =============
     Section 7
 ============= */
-
-#section-7{
-
-    @include xl{
+#section-7 {
+    @include xl {
         display: grid;
         grid-template-areas: ". section-7 .";
         grid-template-columns: auto 1200px auto;
-        }
+    }
 
-    #section-7-content{
+    #section-7-content {
         grid-area: section-7;
-        // background-color: $lightgreen;
         margin-top: 20px;
 
-        @include md{
+        @include md {
             background-color: $midgreen;
             margin-top: 40px;
         }
 
-        @include xl{
+        @include xl {
             margin-top: 50px;
         }
 
-
-        #section-7-header{
-            font-family: Patua One;
+        #section-7-header {
             background-color: $darkgreen;
             color: $white;
+            font-family: Patua One;
+            font-size: 1.6rem;
             grid-area: section-7;
             margin: 0px 0px 0px 0px;
             padding: 30px 20px 30px 20px;
             text-align: center;
-            font-size: 1.6rem;
-            
-            @include md{
+
+            @include md {
                 background-color: transparent;
                 background-image: url('../img/section-7/tabheader7-1.svg');
-                background-size: cover;
-                background-repeat: no-repeat;
                 background-position: 2px 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
                 height: 5vh;
                 padding-top: 50px;
             }
 
-            @include lg{
+            @include lg {
                 background-color: transparent;
                 background-image: url('../img/section-7/deskheader.svg');
                 background-position: center;
@@ -53,72 +49,69 @@
                 padding-top: 100px;
             }
         }
-        
-        aside{
-            background-size: cover;
-            background-repeat: no-repeat;
+
+        aside {
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 28vh;
 
-            @include md{
-                margin: 40px 80px 10px 80px;
+            @include md {
                 height: 34vh;
+                margin: 40px 80px 10px 80px;
             }
 
-            @include lg{
-                margin: 40px 180px 10px 180px;
+            @include lg {
                 height: 70vh;
+                margin: 40px 180px 10px 180px;
             }
-            }
+        }
 
-        p{
+        p {
             font-family: Taviraj;
-            font-weight: 100;
             font-size: 1.5rem;
+            font-weight: 100;
             grid-area: section-7;
             line-height: 2rem;
             margin: 80px 30px 50px 30px;
-            text-align: justify;
             position: absolute;
+            text-align: justify;
 
-            @include md{
-                text-align: center;
+            @include md {
                 margin: 40px 138px 50px 138px;
+                text-align: center;
             }
 
-            @include lg{
+            @include lg {
                 margin: 30px 220px 50px 220px;
             }
 
-            @include xl{
+            @include xl {
                 margin: 0px 400px 0px 300px;
             }
+        }
 
-            
-            }
-        
-            #trapezoid{
-                background-image: url('../img/section-7/mobshape7green.svg');
+        #trapezoid {
+            background-color: $lightgreen;
+            background-image: url('../img/section-7/mobshape7green.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+
+            @include md {
                 background-color: $lightgreen;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height: 60vh; 
-
-                @include md{
-                    background-image: url('../img/section-7/tabshape7green.svg');
-                    height: 32vh;
-                    background-color: $lightgreen;
-                }
-
-                @include lg{
-                    height: 65vh;
-                }
-
-                @include xl{
-                    height: 60vh;
-                }
+                background-image: url('../img/section-7/tabshape7green.svg');
+                height: 32vh;
             }
+
+            @include lg {
+                height: 65vh;
+            }
+
+            @include xl {
+                height: 60vh;
+            }
+        }
     }
 }
-           

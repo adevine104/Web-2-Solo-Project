@@ -1,97 +1,92 @@
 /* =============
     Section 8
 ============= */
-
-#section-8{
-
-    @include xl{
+#section-8 {
+    @include xl {
         display: grid;
         grid-template-areas: ". section-8 .";
         grid-template-columns: auto 1200px auto;
-        }
+    }
 
-    #section-8-content{
+    #section-8-content {
         grid-area: section-8;
 
-        @include xl{
+        @include xl {
             margin-top: 50px;
         }
 
-        #section-8-header{
-            font-family: Patua One;
+        #section-8-header {
             color: $gold;
+            font-family: Patua One;
+            font-size: 1.6rem;
             grid-area: section-8;
             margin: 30px 20px 30px 20px;
             text-align: center;
-            font-size: 1.6rem;
-            }
-        
-         aside{
+        }
+
+        aside {
             background-image: url('../img/section-8/parade2.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 28vh;
 
-            @include md{
+            @include md {
                 margin: 20px 120px 10px 120px;
             }
 
-            @include lg{
-                margin: 20px 200px 10px 200px;
+            @include lg {
                 height: 60vh;
+                margin: 20px 200px 10px 200px;
             }
-            }
-            
-            p{
-                font-family: Taviraj;
-                font-weight: 100;
-                font-size: 1.5rem;
-                grid-area: section-8;
-                line-height: 2rem;
-                margin: 20px 30px 30px 30px;
-                text-align: justify;  
+        }
 
-                @include md{
-                    margin: 20px 180px 10px 180px;
-                    text-align: center;
-                }
+        p {
+            font-family: Taviraj;
+            font-size: 1.5rem;
+            font-weight: 100;
+            grid-area: section-8;
+            line-height: 2rem;
+            margin: 20px 30px 30px 30px;
+            text-align: justify;
 
-                @include lg{
-                    margin: 20px 320px 10px 320px;
-                }
-            }
-
-            #section-8-button{
+            @include md {
+                margin: 20px 180px 10px 180px;
                 text-align: center;
-                margin: 10px 0px 40px 0px;
-                font-family: Taviraj light;
-                font-size: 1.4rem;
+            }
 
-                @include md{
-                    text-align: right;
-                    margin-right: 50px;
-                    margin-top: 25px;
-                }
+            @include lg {
+                margin: 20px 320px 10px 320px;
+            }
+        }
 
-                a:link,
-                a:visited {
-                    background-color: $white;
-                    color: $lilac;
-                    padding: 10px 25px;
-                    text-decoration: none;
-                    transition: 0.25s;
-                    width: 100%;
-                }
+        #section-8-button {
+            font-family: Taviraj light;
+            font-size: 1.4rem;
+            margin: 10px 0px 40px 0px;
+            text-align: center;
 
-                a:hover,
-                a:active {
-                    background-color: $white;
-                    color: $gold;
-                }
-            
+            @include md {
+                margin-right: 50px;
+                margin-top: 25px;
+                text-align: right;
+            }
+
+            a:link,
+            a:visited {
+                background-color: $white;
+                color: $lilac;
+                padding: 10px 25px;
+                text-decoration: none;
+                transition: 0.25s;
+                width: 100%;
+            }
+
+            a:hover,
+            a:active {
+                background-color: $white;
+                color: $gold;
+            }
         }
     }
 }
-
-           

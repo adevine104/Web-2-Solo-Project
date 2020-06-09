@@ -1,102 +1,91 @@
 /* =============
     Section 4
 ============= */
-
 #section-4 {
     margin-top: 50px;
 
-    @include md{
+    @include md {
         margin-top: 50px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: 55px;
     }
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-areas: ". section-4 .";
         grid-template-columns: auto 1200px auto;
         margin-top: 80px;
-        }
+    }
 
-    #section-4-desktop{
+    #section-4-desktop {
         grid-area: section-4;
 
         #section-4-header {
-            font-family: Patua One;
             color: $purple;
+            font-family: Patua One;
+            font-size: 1.6rem;
             grid-area: section-4;
             margin: 30px 20px 40px 20px;
-            text-align: left;
-            font-size: 1.6rem;
             padding-right: 20px;
+            text-align: left;
 
-            @include md{
-                text-align: center;
+            @include md {
                 margin-top: 0px;
-                }
+                text-align: center;
             }
-
-            #section-4-container{
-
-                @include lg{
-                    display: grid;
-                    grid-template-columns: 60% auto;
-                    grid-template-areas: " image type";
-                    margin-bottom: 80px;
-                }
-
-                @include lg{
-                    margin-bottom: 0px;
-                }
-        
-                #section-4-image{
-                    grid-area: image;
-                    background-image: url('../img/section-4/infovid.jpg');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    height: 30vh;
-                    
-                    @include md{
-                        margin: 0px 10% 0px 10%;
-                        height: 35vh;
-                    }
-
-                    @include lg{
-                        margin: 0px 5% 0px 0;
-                        height: 57vh;
-                    }
-                  
-                }
-            
-           #section-4-content{
-            grid-area: type;
-
-            p{
-                font-family: Taviraj;
-                font-weight: 100;
-                font-size: 1.5rem;
-                grid-area: section-4;
-                line-height: 2rem;
-                text-align: justify;  
-                margin: 20px 30px 40px 30px;
-
-                @include md{
-                    text-align: center;
-                    margin: 20px 150px 50px 150px;
-                    font-size: 1.7;
-                }
-
-                @include lg{
-                    text-align: left;
-                    margin: 100px 150px 40px 10px;
-                    font-size: 1.7;
-                }
-            }
-           }
         }
+
+        #section-4-container {
+            @include lg {
+                margin-bottom: 0px;
+            }
+
+            #section-4-image {
+                background-image: url('../img/section-4/infovid.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                grid-area: image;
+                height: 30vh;
+
+                @include md {
+                    height: 35vh;
+                    margin: 0px 10% 0px 10%;
+                }
+
+                @include lg {
+                    height: 57vh;
+                    margin: 0px 5% 0px 0;
+                }
+            }
+
+            #section-4-content {
+                grid-area: type;
+
+                p {
+                    font-family: Taviraj;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    grid-area: section-4;
+                    line-height: 2rem;
+                    margin: 20px 30px 40px 30px;
+                    text-align: justify;
+
+                    @include md {
+                        font-size: 1.7;
+                        margin: 20px 150px 50px 150px;
+                        text-align: center;
+                    }
+
+                    @include lg {
+                        font-size: 1.7;
+                        margin: 100px 150px 40px 10px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
 }
-}
-           

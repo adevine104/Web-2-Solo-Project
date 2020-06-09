@@ -1,14 +1,12 @@
 /* =============
     Section 3
 ============= */
-
 #section-3 {
     margin-top: 65px;
 
-    @include md{
+    @include md {
         margin-top: 70px;
     }
-
 
     @include xl {
         display: grid;
@@ -17,17 +15,16 @@
         margin-top: 55px;
     }
 
-    h1{
+    h1 {
         font-family: Patua One;
         font-size: 3rem;
     }
 
     >div {
-
         display: grid;
-            grid-template-areas: "blueman"
-                "title"
-                "numbers";
+        grid-template-areas: "blueman"
+            "title"
+            "numbers";
 
         @include md {
             display: grid;
@@ -42,20 +39,19 @@
                 "numbers";
         }
 
-        @include xl{
+        @include xl {
             grid-area: section-3;
         }
 
         #section-title {
             background: $boldorange;
             color: $white;
-            text-align: center;
             grid-area: title;
-            
+            text-align: center;
 
             @include lg {
-                position: relative;
                 padding-bottom: 50px;
+                position: relative;
             }
 
             #orange-bar {
@@ -97,12 +93,12 @@
             h1 {
                 padding: 20px 0px 20px 0px;
 
-                @include md{
-                padding: 35px 0px 30px 0px;
+                @include md {
+                    padding: 35px 0px 30px 0px;
                 }
 
-                @include lg{
-                padding: 50px 0px 20px 0px;
+                @include lg {
+                    padding: 50px 0px 20px 0px;
                 }
             }
         }
@@ -154,14 +150,13 @@
         }
 
         #numbers {
-            background-color: $lightorange;
             background-color: $white;
-                background-image: url("../img/section-3/mobshape3orange.svg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                padding-bottom: 300px;
-                height: 55vh;
+            background-image: url("../img/section-3/mobshape3orange.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 55vh;
+            padding-bottom: 300px;
 
             @include md {
                 background-color: $white;
@@ -170,13 +165,13 @@
                 background-repeat: no-repeat;
                 background-size: 140%;
                 grid-area: numbers;
-                padding-bottom: 80px;
                 height: 55vh;
+                padding-bottom: 80px;
             }
 
             @include lg {
-                padding-bottom: 570px;
                 height: 35vh;
+                padding-bottom: 570px;
             }
 
             @include xl {
@@ -204,11 +199,11 @@
                     grid-template-columns: repeat(6, 1fr);
                 }
 
-                @include lg{
+                @include lg {
                     padding-top: 120px;
                 }
 
-                @include xl{
+                @include xl {
                     padding-top: 150px;
                 }
 
@@ -222,20 +217,16 @@
                         text-align: center;
                     }
 
-                    @include xl{
-                        margin-bottom: 65px;
-                    }
-
-                    @include xl{
+                    @include xl {
                         margin-bottom: 80px;
                     }
 
                     .number {
                         align-items: center;
-                        font-family: Patua One;
                         background-color: $white;
                         color: $boldorange;
                         display: flex;
+                        font-family: Patua One;
                         font-size: rem-calc(30);
                         font-weight: 700;
                         height: 56px;
@@ -251,8 +242,8 @@
 
                     h3 {
                         color: $white;
-                        font-size: rem-calc(30);
                         font-family: Patua One;
+                        font-size: rem-calc(30);
                     }
                 }
 
