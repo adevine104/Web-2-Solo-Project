@@ -3,20 +3,27 @@
 ============= */
 
 #section-8{
-    display: grid;
-    grid-template-areas: ". section-8 .";
-    grid-template-columns: 0px auto 0px;
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-8 .";
+        grid-template-columns: auto 1200px auto;
+        }
 
     #section-8-content{
-        grid-area: section-4;
+        grid-area: section-8;
 
-        h1{
+        @include xl{
+            margin-top: 50px;
+        }
+
+        #section-8-header{
             font-family: Patua One;
             color: $gold;
             grid-area: section-8;
-            margin: 80px 20px 40px 20px;
+            margin: 30px 20px 30px 20px;
             text-align: center;
-            font-size: 3rem;
+            font-size: 1.6rem;
             }
         
          aside{

@@ -1,268 +1,275 @@
 /* =============
     Section 3
 ============= */
-#section-3 {
-    background-color: transparent;
-    display: grid;
-    grid-template-areas: ". section-3 .";
-    grid-template-columns: 0px auto 0px;
 
-    #section-3-desktop {
-         grid-area: section-3;
+#section-3 {
+    margin-top: 65px;
+
+    @include md{
+        margin-top: 70px;
+    }
+
+
+    @include xl {
+        display: grid;
+        grid-template-areas: ". section-3 .";
+        grid-template-columns: auto 1200px auto;
+        margin-top: 55px;
+    }
+
+    h1{
+        font-family: Patua One;
+        font-size: 3rem;
+    }
+
+    >div {
+
+        display: grid;
+            grid-template-areas: "blueman"
+                "title"
+                "numbers";
+
+        @include md {
+            display: grid;
+            grid-template-areas: "blueman"
+                "title"
+                "numbers";
+        }
+
+        @include lg {
+            grid-template-areas: "title"
+                "blueman"
+                "numbers";
+        }
+
+        @include xl{
+            grid-area: section-3;
+        }
+
+        #section-title {
+            background: $boldorange;
+            color: $white;
+            text-align: center;
+            grid-area: title;
+            
 
             @include lg {
-                .container {
-                  display: -webkit-box;
-                  display: -moz-box;
-                  display: -ms-flexbox;
-                  display: -webkit-flex;
-                  display: flex;
-                  -webkit-box-orient: vertical;
-                  -moz-box-orient: vertical;
-                  -webkit-flex-direction: column;
-                  -ms-flex-direction: column;
-                  flex-direction: column;
-                }
-              
-                .container .section-3-image {
-                  -webkit-box-ordinal-group: 2;
-                  -moz-box-ordinal-group: 2;
-                  -ms-flex-order: 2;
-                  -webkit-order: 2;
-                  order: 2;
-                }
-              
-                .container .section-3-header {
-                  -webkit-box-ordinal-group: 1;
-                  -moz-box-ordinal-group: 1;
-                  -ms-flex-order: 1;
-                  -webkit-order: 1;
-                  order: 1;
-                }
-        }
-
-         aside{
-             grid-area: image;
-            background-image: url('../img/section-3/blueface.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: -300px 0px;
-            height: 45vh;
-
-            @include md{
-                height: 30vh;
-                background-position: 0px 0px;
+                position: relative;
+                padding-bottom: 50px;
             }
 
-            @include lg{
-                height: 60vh;
-                background-position: 0px 0px;
+            #orange-bar {
+                @include lg {
+                    background-color: $tangerine;
+                    height: 50px;
+                }
             }
-         }
 
-            #section-3-header {
-                grid-area: header;
-                font-family: Patua One;
-                font-size: 1.4rem;
-                background-color: $boldorange;
-                color: white;
-                grid-area: section-3;
-                margin: 0px 0px 0px 0px;
-                padding: 20px 35px 20px 35px;
-                text-align: center;
+            #corner {
+                @include lg {
+                    height: 100%;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0px;
+                    width: 100px;
+
+                    section {
+                        transform: rotate(-45deg);
+
+                        #white {
+                            background-color: $white;
+                            height: 80px;
+                            margin-left: -40px;
+                            margin-top: -79px;
+                            width: 200%;
+                        }
+
+                        #light-orange {
+                            background-color: $tangerine;
+                            height: 50px;
+                            margin-left: -90px;
+                            width: 200%;
+                        }
+                    }
+                }
+            }
+
+            h1 {
+                padding: 20px 0px 20px 0px;
 
                 @include md{
-                    padding: 30px 35px 30px 35px;
+                padding: 35px 0px 30px 0px;
                 }
 
                 @include lg{
-                    background-color: transparent;
-                    background-image: url('../img/section-3/deskheader.svg');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    height: 10vh;
-                    padding-top: 100px;
+                padding: 50px 0px 20px 0px;
                 }
             }
-        
-            #section-3-list {
-                font-family: Patua One;
-                background-color: transparent;
-                color: white;
-                grid-area: section-3;
-                margin: 40px 20px 40px 30px;
-                text-align: left;
-                font-size: 1.9rem;
-                position: absolute;
+        }
 
-                a:link,
-                a:visited {
-                    color: $white;
-                    padding: 10px 25px 10px 15px;
-                    text-decoration: none;
-                    transition: 0.25s;
-                    width: 100%;
+        #blue-man {
+            background-image: url("../img/section-3/blueface.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 320px;
+
+            @include md {
+                grid-area: blueman;
+                position: relative;
+            }
+
+            @include lg {
+                height: 414px;
+            }
+
+            @include xl {
+                height: 591px;
+            }
+
+            #white-corner-container {
+                @include md {
+                    height: 89px;
+                    left: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    width: 96px;
                 }
 
-                a:hover,
-                a:active {
-                    color: $lilac;
-                }
+                #white-corner {
+                    @include md {
+                        background-color: $white;
+                        height: 80px;
+                        margin-left: -60px;
+                        margin-top: -60px;
+                        transform: rotate(-45deg);
+                        width: 200%;
+                    }
 
-                margin-bottom: 30px;
+                    @include lg {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        #numbers {
+            background-color: $lightorange;
+            background-color: $white;
+                background-image: url("../img/section-3/mobshape3orange.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-bottom: 300px;
+                height: 55vh;
+
+            @include md {
+                background-color: $white;
+                background-image: url("../img/section-3/tabshape3orange.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 140%;
+                grid-area: numbers;
+                padding-bottom: 80px;
+                height: 55vh;
+            }
+
+            @include lg {
+                padding-bottom: 570px;
+                height: 35vh;
+            }
+
+            @include xl {
+                padding-bottom: 700px;
+            }
+
+            #numbers-container {
                 display: grid;
-                gap: 20px;
-                grid-template-columns: repeat(1, 2fr);
-                grid-template-areas: 
-                    "c1"
-                    "c2"
-                    "c3"
-                    "c4"
-                    "c5";
-                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas: ". numbers-container .";
+                grid-template-columns: 5% auto 5%;
 
                 @include md {
+                    rid-template-columns: 10% auto 10%;
+                }
+            }
+
+            ul {
+                grid-area: numbers-container;
+                padding-top: 62px;
+
+                @include md {
+                    display: grid;
+                    grid-template-areas: "one one two two three three"
+                        ". four four five five .";
+                    grid-template-columns: repeat(6, 1fr);
+                }
+
+                li {
+                    align-items: center;
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    margin-bottom: 42px;
+
+                    @include md {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .number {
+                        align-items: center;
+                        font-family: Patua One;
+                        background-color: $white;
+                        color: $boldorange;
+                        display: flex;
+                        font-size: rem-calc(30);
+                        font-weight: 700;
+                        height: 56px;
+                        justify-content: center;
+                        margin-right: 15px;
+                        width: 56px;
+
+                        @include md {
+                            margin: 0 auto;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    h3 {
+                        color: $white;
+                        font-size: rem-calc(30);
+                        font-family: Patua One;
+                    }
                 }
 
-                @include lg {
-                    font-size: 2.2rem;
-                    margin: 100px 140px 200px 140px;
+                li:nth-child(1) {
+                    @include md {
+                        grid-area: one;
+                    }
                 }
 
-                @include xl {
-                    font-size: 2.2rem;
-                    margin: 100px 250px 200px 250px;
-                }
-            }
-
-            #triangle{
-                background-image: url('../img/section-3/mobshape3orange.svg');
-                background-color: $tangerine;
-                background-size: cover;
-                background-repeat: no-repeat;
-                display: block;
-                background-position: center;
-                height: 90vh;
-
-                @include md{
-                    background-image: url('../img/section-3/tabshape3orange.svg');
-                    height: 60vh;
-                } 
-
-                @include lg{
-                    height: 120vh;
-                } 
-            }
-
-            .list-container{
-                margin-right: 100px;
-            }
-
-            .number{
-                background-color: white;
-                color: $lightorange;
-                width: 40px;
-                height: 40px;
-                text-align: center;
-
-                @include md{
-                    margin-left: 40px;
-                }
-            }
-
-            .word{
-
-                @include md{
-                margin-bottom: 100px;
-                }
-            }
-            a{
-                margin-left: 40px;
-
-                @include md{
-                    margin-left: 0px;
-                    margin-right: 20px;
-                }
-            }
-
-            #number-1-container{
-                grid-area: c1; 
-
-                @include sm{
-                grid-template-columns: repeat(1,2fr);
-                grid-template-rows: repeat(1,1fr);
-                grid-template-areas: "n1 w1";
+                li:nth-child(2) {
+                    @include md {
+                        grid-area: two;
+                    }
                 }
 
-                #number-1 {
-                    grid-area: n1;
+                li:nth-child(3) {
+                    @include md {
+                        grid-area: three;
+                    }
                 }
 
-                #word-1 {
-                    grid-area: w1;
+                li:nth-child(4) {
+                    @include md {
+                        grid-area: four;
+                    }
+                }
+
+                li:nth-child(5) {
+                    @include md {
+                        grid-area: five;
+                    }
                 }
             }
-
-            #number-2-container{
-                grid-area: c2;
-
-                @include sm{
-                    grid-template-columns: repeat(1,2fr);
-                    grid-template-rows: repeat(1,1fr);
-                    grid-template-areas: "n2 w2";
-                }
-
-                #number-2 {
-                    grid-area: n2;
-                }
-
-                #word-2 {
-                    grid-area: w2;
-                }
-            }
-
-            #number-3-container{
-                grid-area: c3;
-
-                #number-3 {
-                    grid-area: n3;
-                }
-
-                #word-3 {
-                    grid-area: w3;
-                    margin-right: 20px;
-                }
-            }
-
-            #number-4-container{
-                grid-area: c4;
-
-                #number-4 {
-                    grid-area: n4;
-                }
-
-                #word-4 {
-                    grid-area: w4;
-                }
-            }
-
-
-            #number-5-container{
-                grid-area: c5;
-
-                #number-5 {
-                    grid-area: n5;
-                }
-    
-                #word-5 {
-                    grid-area: w5;
-                }
-            }
-
         }
-
     }
+}

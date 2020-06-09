@@ -25,17 +25,21 @@ header {
 
         #search-container {
             grid-area: logo;
-            margin-top: 16px;
-            background-image: url('../img/header/searchform.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center right;
-            height: 33px;
-            width: 160px;
-            margin-left: 43%;
+            // margin-top: 16px;
+            // background-image: url('../img/header/searchform.svg');
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: center right;
+            // height: 33px;
+            // width: 160px;
+            // margin-left: 43%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 15px;
 
             @include md{
-                margin-left: 70%;
+               // margin-left: 70%;
             }
 
             @include lg{
@@ -60,21 +64,29 @@ header {
         }
 
         #nav-container {
-            background-color: $white;
+            background-color: $purple;
             display: none;
             grid-area: nav;
             padding: 10px 20px;
             font-family: Taviraj;
             font-weight: 500;
             
+            
                 a:link,
                 a:visited {
-                    background-color: $white;
-                    color: $purple;
-                    padding: 10px 35px;
+                    background-color: $purple;
+                    color: white;
+                    padding: 10px 0px;
                     text-decoration: none;
                     transition: 0.25s;
                     width: 100%;
+
+                    @include lg {
+                        background-color: $white;
+                        color: $purple;
+                        padding: 10px 35px;
+                        display: block !important;
+                    }
                 }
 
                 a:hover,

@@ -3,17 +3,27 @@
 ============= */
 
 #section-7{
-    display: grid;
-    grid-template-areas: ". section-7 .";
-    grid-template-columns: 0px auto 0px;
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-7 .";
+        grid-template-columns: auto 1200px auto;
+        }
 
     #section-7-content{
         grid-area: section-7;
         // background-color: $lightgreen;
+        margin-top: 20px;
 
         @include md{
             background-color: $midgreen;
+            margin-top: 40px;
         }
+
+        @include xl{
+            margin-top: 50px;
+        }
+
 
         #section-7-header{
             font-family: Patua One;
@@ -67,13 +77,13 @@
             font-size: 1.5rem;
             grid-area: section-7;
             line-height: 2rem;
-            margin: 50px 30px 50px 30px;
+            margin: 80px 30px 50px 30px;
             text-align: justify;
             position: absolute;
 
             @include md{
                 text-align: center;
-                margin: 30px 138px 50px 138px;
+                margin: 40px 138px 50px 138px;
             }
 
             @include lg{
@@ -81,7 +91,7 @@
             }
 
             @include xl{
-                margin: 130px 320px 50px 320px;
+                margin: 0px 400px 0px 300px;
             }
 
             
@@ -93,7 +103,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                height: 50vh; 
+                height: 60vh; 
 
                 @include md{
                     background-image: url('../img/section-7/tabshape7green.svg');
@@ -106,7 +116,7 @@
                 }
 
                 @include xl{
-                    height: 70vh;
+                    height: 60vh;
                 }
             }
     }

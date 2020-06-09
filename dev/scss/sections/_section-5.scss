@@ -3,9 +3,12 @@
 ============= */
 
 #section-5{
+
+    @include xl{
     display: grid;
     grid-template-areas: ". section-5 .";
-    grid-template-columns: 0px auto 0px;
+    grid-template-columns: auto 1200px auto;
+    }
 
     #section-5-content{
         grid-area: section-5;
@@ -26,7 +29,7 @@
                 background-image: url('../img/section-5/tabheader.svg');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: -162px 0px;
+                background-position: -130px 0px;
                 height: 5vh;
                 padding-top: 50px;
             }
@@ -114,7 +117,7 @@
                     @include xl{
                         padding: 30px 10px 0px 10px;
                         height: 65px;
-                        margin-left: 240px;
+                        margin-left: 190px;
                     }
                 }
 
@@ -196,6 +199,10 @@
                 justify-content: flex-end;
                 margin: 0px 20px 80px 0px;
             }
+
+            @include lg{
+                margin: 0px 20px 0px 0px;
+            }
             }
 
             #section-5-oval{
@@ -204,13 +211,13 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 0px 0px;
-                height: 23vh; 
+                height: 27vh; 
 
                 @include md{
                     background-image: url('../img/section-5/tabshape3.svg');
                     background-color: white;
                     background-position: center;
-                    height: 13vh; 
+                    height: 14vh; 
                 }
 
                 @include lg{
@@ -221,8 +228,9 @@
                 }
 
                 @include xl{
-                    background-position: center;
+                    background-position: -30px -5px;
                     height: 35vh; 
+                    width: 102.5%;
                 }
             }
     }

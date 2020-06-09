@@ -2,14 +2,17 @@
     Section 2
 ============= */
 #section-2 {
-    display: grid;
-    grid-template-areas: ". section-2 .";
-    grid-template-columns: 15px auto 15px;
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-2 .";
+        grid-template-columns: auto 1200px auto;
+        }
 
     #section-2-content {
         font-family: Taviraj;
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         grid-area: section-2;
         line-height: 2rem;
         margin: 0px 20px 0px 20px;
@@ -31,7 +34,7 @@
             text-align: center;
             color: $gold;
             font-size: 1.4rem;
-            padding: 40px 0px 40px 0px;
+            padding: 0px 0px 40px 0px;
         }
 
         #section-2-buttons {
@@ -42,6 +45,7 @@
 
             @include md{
                 text-align: right;
+                margin: 20px 0px 55px 0px;
             }
 
             a:link,

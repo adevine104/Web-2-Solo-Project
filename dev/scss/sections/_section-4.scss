@@ -3,9 +3,22 @@
 ============= */
 
 #section-4 {
-    display: grid;
-    grid-template-areas: ". section-4 .";
-    grid-template-columns: 0px auto 0px;
+    margin-top: 50px;
+
+    @include md{
+        margin-top: 50px;
+    }
+
+    @include lg{
+        margin-top: 55px;
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-4 .";
+        grid-template-columns: auto 1200px auto;
+        margin-top: 80px;
+        }
 
     #section-4-desktop{
         grid-area: section-4;
@@ -14,13 +27,14 @@
             font-family: Patua One;
             color: $purple;
             grid-area: section-4;
-            margin: 20px 20px 40px 20px;
+            margin: 30px 20px 40px 20px;
             text-align: left;
             font-size: 1.6rem;
             padding-right: 20px;
 
             @include md{
                 text-align: center;
+                margin-top: 0px;
                 }
             }
 
@@ -32,6 +46,10 @@
                     grid-template-areas: " image type";
                     margin-bottom: 80px;
                 }
+
+                @include lg{
+                    margin-bottom: 0px;
+                }
         
                 #section-4-image{
                     grid-area: image;
@@ -39,7 +57,7 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
-                    height: 28vh;
+                    height: 30vh;
                     
                     @include md{
                         margin: 0px 10% 0px 10%;

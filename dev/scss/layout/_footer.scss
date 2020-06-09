@@ -7,17 +7,17 @@ footer{
     padding: 0px 0px 50px 0px;
 
     @include md {
-        display: grid;
-        grid-template-areas: ". footer .";
-        grid-template-columns: auto 770px auto;
+        // display: grid;
+        // grid-template-areas: ". footer .";
+        grid-template-columns: auto 768px auto;
     }
 
     @include lg {
-        grid-template-columns: auto 1000px auto;
+        grid-template-columns: auto 992px auto;
     }
 
     @include lg {
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1200px auto;
     }
  
 
