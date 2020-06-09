@@ -47,7 +47,7 @@
 		"oAP": "/deploy/img/section-1/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/blueface.jpg": {
@@ -58,7 +58,7 @@
 		"oAP": "/deploy/img/section-3/blueface.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/deskheader.svg": {
@@ -159,7 +159,7 @@
 		"oAP": "/deploy/img/section-4/infovid.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/deskheader.svg": {
@@ -190,7 +190,7 @@
 		"oAP": "/deploy/img/section-5/livestreamvid.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/mobshape3-2.svg": {
@@ -251,7 +251,7 @@
 		"oAP": "/deploy/img/section-6/bigface.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/flowerman2.jpg": {
@@ -262,7 +262,7 @@
 		"oAP": "/deploy/img/section-6/flowerman2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/orangeman2.jpg": {
@@ -273,7 +273,7 @@
 		"oAP": "/deploy/img/section-6/orangeman2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/pinkbirdman.jpg": {
@@ -284,7 +284,7 @@
 		"oAP": "/deploy/img/section-6/pinkbirdman.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/pirates.jpg": {
@@ -295,7 +295,7 @@
 		"oAP": "/deploy/img/section-6/pirates.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/saxguy.jpg": {
@@ -306,7 +306,7 @@
 		"oAP": "/deploy/img/section-6/saxguy.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/singguy.jpg": {
@@ -317,7 +317,7 @@
 		"oAP": "/deploy/img/section-6/singguy.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/whitehat.jpg": {
@@ -328,7 +328,7 @@
 		"oAP": "/deploy/img/section-6/whitehat.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-7/deskheader.svg": {
@@ -359,7 +359,7 @@
 		"oAP": "/deploy/img/section-7/highlightvid.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-7/mobshape4.svg": {
@@ -460,7 +460,7 @@
 		"oAP": "/deploy/img/section-8/parade2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {
