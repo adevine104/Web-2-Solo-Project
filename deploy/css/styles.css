@@ -1218,54 +1218,54 @@ footer {
         #section-6 #section-6-container ul li a:hover,
         #section-6 #section-6-container ul li a:active {
           color: #8282EE; }
-        #section-6 #section-6-container ul li #pic {
+        #section-6 #section-6-container ul li .pic {
           background-position: center;
           background-size: cover;
           border-radius: 100%;
           height: 180px; }
           @media (min-width: 768px) {
-            #section-6 #section-6-container ul li #pic {
+            #section-6 #section-6-container ul li .pic {
               height: 240px; } }
           @media (min-width: 992px) {
-            #section-6 #section-6-container ul li #pic {
+            #section-6 #section-6-container ul li .pic {
               height: 280px; } }
-        #section-6 #section-6-container ul li #text {
+        #section-6 #section-6-container ul li .text {
           margin: 10px 8px 0px 8px; }
           @media (min-width: 768px) {
-            #section-6 #section-6-container ul li #text {
+            #section-6 #section-6-container ul li .text {
               margin: 20px 25px 20px 25px; } }
       #section-6 #section-6-container ul #g1 {
         grid-area: g1; }
-        #section-6 #section-6-container ul #g1 #pic {
+        #section-6 #section-6-container ul #g1 .pic {
           background-image: url("../img/section-6/pirates.jpg"); }
       #section-6 #section-6-container ul #g2 {
         grid-area: g2; }
-        #section-6 #section-6-container ul #g2 #pic {
+        #section-6 #section-6-container ul #g2 .pic {
           background-image: url("../img/section-6/flowerman2.jpg"); }
       #section-6 #section-6-container ul #g3 {
         grid-area: g3; }
-        #section-6 #section-6-container ul #g3 #pic {
+        #section-6 #section-6-container ul #g3 .pic {
           background-image: url("../img/section-6/bigface.jpg"); }
       #section-6 #section-6-container ul #g4 {
         grid-area: g4; }
-        #section-6 #section-6-container ul #g4 #pic {
+        #section-6 #section-6-container ul #g4 .pic {
           background-image: url("../img/section-6/orangeman2.jpg"); }
-      #section-6 #section-6-container ul #g5 #pic {
+      #section-6 #section-6-container ul #g5 .pic {
         background-image: url("../img/section-6/saxguy.jpg"); }
       @media (min-width: 768px) {
         #section-6 #section-6-container ul #g5 {
           grid-area: g5; } }
-      #section-6 #section-6-container ul #g6 #pic {
+      #section-6 #section-6-container ul #g6 .pic {
         background-image: url("../img/section-6/singguy.jpg"); }
       @media (min-width: 768px) {
         #section-6 #section-6-container ul #g6 {
           grid-area: g6; } }
-      #section-6 #section-6-container ul #g7 #pic {
+      #section-6 #section-6-container ul #g7 .pic {
         background-image: url("../img/section-6/whitehat.jpg"); }
       @media (min-width: 992px) {
         #section-6 #section-6-container ul #g7 {
           grid-area: g7; } }
-      #section-6 #section-6-container ul #g8 #pic {
+      #section-6 #section-6-container ul #g8 .pic {
         background-image: url("../img/section-6/pinkbirdman.jpg"); }
       @media (min-width: 992px) {
         #section-6 #section-6-container ul #g8 {
