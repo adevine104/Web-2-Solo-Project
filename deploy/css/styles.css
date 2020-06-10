@@ -1098,12 +1098,12 @@ footer {
           display: block;
           font-size: 1.8rem;
           text-align: center; } }
-    #section-5 #section-5-content #section-5-container #section-5-countdown ul {
+    #section-5 #section-5-content #section-5-container #section-5-countdown > div {
       display: grid;
       grid-template-areas: "c-g-1 c-g-2 c-g-3";
       grid-template-columns: repeat(3/33%); }
       @media (min-width: 992px) {
-        #section-5 #section-5-content #section-5-container #section-5-countdown ul {
+        #section-5 #section-5-content #section-5-container #section-5-countdown > div {
           display: grid;
           grid-template-areas: "c-g-1" "c-g-2" "c-g-3"; } }
   #section-5 #section-5-content #section-5-container #c-group-1 {
