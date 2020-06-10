@@ -406,7 +406,8 @@ textarea {
       padding: 0px 0px; } }
 #nav-container ul li a:hover,
 #nav-container ul li a:active {
-  color: #DCAC03; }
+  color: #DCAC03;
+  background-color: transparent; }
 
 @media (min-width: 992px) {
   #nav-container ul li:first-child a {
@@ -502,7 +503,7 @@ header {
             padding: 10px 35px; } }
       header > div #nav-container a:hover,
       header > div #nav-container a:active {
-        background-color: #fff;
+        background-color: transparent;
         color: #DCAC03; }
       @media (min-width: 992px) {
         header > div #nav-container {
