@@ -1138,7 +1138,8 @@ footer {
         text-align: left; } }
     @media (min-width: 992px) {
       #section-5 #section-5-content h6 {
-        margin: 0px 20px 0px 0px; } }
+        margin: 0px 20px 0px 0px;
+        text-align: right; } }
   #section-5 #section-5-content #section-5-oval {
     background-color: transparent;
     background-image: url("../img/section-5/mobshape3-2.svg");
@@ -1160,9 +1161,9 @@ footer {
         width: 100%; } }
     @media (min-width: 1200px) {
       #section-5 #section-5-content #section-5-oval {
-        background-position: -30px -5px;
-        height: 35vh;
-        width: 102.5%; } }
+        background-position: center;
+        height: 32vh;
+        width: 100%; } }
 /* =============
     Section 6
 ============= */

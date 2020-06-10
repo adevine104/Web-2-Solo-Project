@@ -191,6 +191,7 @@
 
             @include lg {
                 margin: 0px 20px 0px 0px;
+                text-align: right;
             }
         }
 
@@ -217,9 +218,9 @@
             }
 
             @include xl {
-                background-position: -30px -5px;
-                height: 35vh;
-                width: 102.5%;
+                background-position: center;
+                height: 32vh;
+                width: 100%;
             }
         }
     }
