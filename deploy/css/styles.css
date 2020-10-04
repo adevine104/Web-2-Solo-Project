@@ -1427,7 +1427,7 @@ footer {
         text-align: right; } }
     #section-8 #section-8-content #section-8-button a:link,
     #section-8 #section-8-content #section-8-button a:visited {
-      background-color: #fff;
+      background-color: transparent;
       color: #8282EE;
       padding: 10px 25px;
       text-decoration: none;
@@ -1435,5 +1435,5 @@ footer {
       width: 100%; }
     #section-8 #section-8-content #section-8-button a:hover,
     #section-8 #section-8-content #section-8-button a:active {
-      background-color: #fff;
+      background-color: transparent;
       color: #DCAC03; }

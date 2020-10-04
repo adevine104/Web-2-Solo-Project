@@ -74,7 +74,7 @@
 
             a:link,
             a:visited {
-                background-color: $white;
+                background-color: transparent;
                 color: $lilac;
                 padding: 10px 25px;
                 text-decoration: none;
@@ -84,7 +84,7 @@
 
             a:hover,
             a:active {
-                background-color: $white;
+                background-color: transparent;
                 color: $gold;
             }
         }

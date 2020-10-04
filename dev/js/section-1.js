@@ -5,11 +5,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const section1TL = gsap.timeline();
 
-section1TL.from("#section-1-header",{duration: 0.5, alpha:0, rotation:180})
-            // .from("#section-1-first h1",{duration: 0.5, alpha:0, x: -300})
-            // .from("#section-1-first h4",{duration: 0.5, alpha:0, x: 300})
-            // .from("#section-1-middle",{duration: 0.5, alpha:0, x: -300})
-            // .from("#section-1-last",{duration: 10, alpha:0, x: 300});
+section1TL.from("#section-1 h1",{duration: 1, alpha:0, x:-300})
+            .from("#section-1 h2",{duration: 1.5, alpha:0})
 
 
 export function section1Animation(){
