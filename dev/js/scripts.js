@@ -5,6 +5,7 @@
 import {section1Animation} from "./section-1.js";
 import {section2Animation} from "./section-2.js";
 import {section3Animation} from "./section-3.js";
+import {section31Animation} from "./section-3.js";
 import {section4Animation} from "./section-4.js";
 import {section5Animation} from "./section-5.js";
 import {section6Animation} from "./section-6.js";
@@ -19,6 +20,7 @@ import {section8Animation} from "./section-8.js";
 section1Animation();
 section2Animation();
 section3Animation();
+section31Animation();
 section4Animation();
 section5Animation();
 section6Animation();
