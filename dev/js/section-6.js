@@ -6,8 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 const section6TL = gsap.timeline();
 
 section6TL.from("#section-6 h1",{duration: 1, alpha:0, y:100})
-          .from(".pic",{duration: 1.5, alpha:0, rotate:90, stagger:.5}, "play-6")
-          .from(".text",{duration: 1.5, alpha:0,  stagger:.5}, "play-6")
+          .from(".pic",{duration: 1.5, alpha:0, rotate:90, stagger:.1}, "play-6")
+          .from(".text",{duration: 1.5, alpha:0,  stagger:.1}, "play-6")
             // .from(".c-5-numbers",{duration: 1.5, alpha:0, rotation: 360, stagger:.5}, "play-5")
             // .from(".c-5-words",{delay:1, duration: 1.5, alpha:0, stagger:.5}, "play-5")
             // .from("#section-5 h6",{duration: .5, alpha:0})
