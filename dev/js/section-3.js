@@ -24,8 +24,8 @@ export function section3Animation(){
 
 const section31TL = gsap.timeline();
 
-section31TL.from("#section-3 .number",{duration: 1, alpha:0, rotation: 270, stagger:.5}, "play-3")
-            .from("#section-3 h3",{duration: 1, alpha:0, stagger:.5}, "play-3")
+section31TL.from("#section-3 .number",{duration: 1, alpha:0, rotation: 180, stagger:.25}, "play-3")
+            .from("#section-3 h3",{duration: 1, alpha:0, stagger:.25}, "play-3")
 
 export function section31Animation(){
     ScrollTrigger.create({
